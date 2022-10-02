@@ -21,6 +21,10 @@ section {
 	padding: 10px;
 }
 
+li p {
+	margin-top: 0;
+}
+
 p.example {
 	font-style: italic;
 }

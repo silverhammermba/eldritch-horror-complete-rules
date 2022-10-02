@@ -32,9 +32,8 @@
 			<h3 id="players-and-investigators">Players and Investigators</h3>
 
 			<p>When playing <em>Eldritch Horror</em>, each player controls an
-			investigator. In this rulebook, the word “investigator”
-			refers to both the player controlling the investigator as
-			well as the in-game character.</p>
+			investigator. The word “investigator” refers to a player, the in-game character he controls,
+and that character’s Investigator sheet and Investigator token. </p>
 		</section>
 
 		<section>
@@ -59,6 +58,14 @@ investigator cannot move or be moved by any action or effect.</p>
 			<li>Create the <a href="#what-are-gates">Gate</a> stack by randomizing the nine Gate tokens,
 				and placing them facedown (common side up) in a stack
 				within reach of all players.</li>
+			<ul>
+				<li>Gates are kept facedown in the Gate stack until they are spawned.</li>
+				<li>When a Gate is closed, it is discarded.</li>
+						<li>When a Gate is discarded, it is placed in a faceup discard pile
+near the Gate stack until the Gate stack is empty. When there are
+no Gates remaining in the Gate stack, place all discarded Gates
+facedown in the Gate stack and randomize them.</li>
+			</ul>
 			<li id="clue-pool">Create the <a href="#what-are-clues">Clue</a> pool by placing the Clue tokens facedown
 				(common side up) in a pile within reach of all players and
 				randomize them.</li>
@@ -97,6 +104,20 @@ track those tokens on paper or with a small object such as a coin.</li>
 		each player chooses one investigator. He takes the corresponding
 		Investigator sheet, then places the matching Investigator token on
 		the game board space listed on the back of his Investigator sheet.</p>
+
+		<ul>
+			<li>Each Investigator sheet has an action ability that the investigator
+may perform during the Action Phase and a passive ability that
+affect how he and other investigators interact with the game.</li>
+<li>Each Investigator sheet lists the investigator’s maximum Health
+and Sanity and five skills: Lore ([), Influence (]),
+Observation (|), Strength (}), and Will ({).</li>
+<li><p>The back of each Investigator sheet indicates the investigator’s
+starting location, including a map for reference, and his starting
+possessions, Conditions, and effects.</p>
+	<p>It also indicates the investigator’s defeated investigator encounters,
+	including a Crippled effect and an Insane effect.</p></li>
+		</ul>
 
 		<h3 id="receive-starting-possessions-health-and-sanity">4. Receive Starting Possessions, Health, and Sanity</h3>
 		<p>Each investigator receives the starting possessions listed on the back
@@ -222,6 +243,30 @@ appropriate space.</li>
 				effects on that card.</li>
 		</ol>
 
+		<h2 id="hidden-information">Hidden Information</h2>
+		<p>Some information is intentionally hidden from players. The following
+cannot be examined by players unless they are instructed by some
+effect:</p>
+		<ul>
+			<li>The back of double-sided cards, such as Spells or Conditions.</li>
+			<li>The order and specific cards found in any deck.</li>
+			<li>The front of Clues or Gates that are in the Clue pool or Gate stack.</li>
+			<li>Mythos cards that have been returned to the game box.</li>
+		</ul>
+
+<p>Information that is not hidden includes the following.</p>
+<ul>
+	<li>The back of Monster tokens.</li>
+	<li>The cards in discard piles.</li>
+	<li>The information on the back of Investigator sheets.</li>
+	<li>The information on the back of Ancient One sheets.</li>
+	<li>The information on the back of Clue tokens that are in the discard pile or held by an investigator.</li>
+</ul>
+
+<p>Although players may legally look at this information, they may find
+the game more exciting if they do not look at this information unless
+instructed by some effect. </p>
+
 		<h2 id="object-of-the-game">Object of the Game</h2>
 		<p><em>Eldritch Horror</em> is a cooperative game. All players are on the
 		same team and <a href="#winning-the-game">win or lose</a> the game together. The investigators’
@@ -238,11 +283,11 @@ appropriate space.</li>
 		round consists of three phases that are resolved in the following
 		order:</p>
 		<ol id="lead-investigator">
-			<li><strong>Action Phase:</strong> Investigators perform actions to move about
+			<li><a href="#phase-action-phase"><strong>Action Phase:</strong></a> Investigators perform actions to move about
 				the game board and prepare for the tasks ahead.</li>
-			<li><strong>Encounter Phase:</strong> Investigators fight Monsters or resolve
+			<li><a href="#phase-encounter-phase"><strong>Encounter Phase:</strong></a> Investigators fight Monsters or resolve
 				encounter cards on their current space.</li>
-			<li><strong>Mythos Phase:</strong> The Lead Investigator resolves one Mythos
+			<li><a href="#phase-mythos-phase"><strong>Mythos Phase:</strong></a> The Lead Investigator resolves one Mythos
 				card. These cards often advance the Doom token, spawn
 				Gates, or raise other challenges that investigators will need
 				to overcome.</li>
@@ -253,8 +298,12 @@ appropriate space.</li>
 		Action Phase. Players continue resolving game rounds until
 		they have won or lost the game.</p>
 
+		<p><span class="def">Active investigator</span> refers to the investigator currently performing
+actions or resolving an encounter. During the Mythos Phase, the
+Lead Investigator is the active investigator.</p>
+
 		<p>If multiple effects would be resolved at the same time during the game, the active
-		player decides the order in which they are resolved.</p>
+		investigator decides the order in which they are resolved.</p>
 		<p>When investigators make a decision as a group, the Lead
 		Investigator makes the final decision.</p>
 
@@ -412,7 +461,9 @@ owner cannot use the component action that round.</p>
 		<h2 id="phase-encounter-phase">Phase 2: Encounter Phase</h2>
 		<p>During this phase, each investigator must resolve <strong>one encounter</strong>.
 		Encounters often involve reading a short narrative on an
-		encounter card which can have positive and/or negative effects.</p>
+		encounter card which can have positive and/or negative effects. We recommend a player other
+than the active investigator reads encounter cards and does not reveal
+the results of passing or failing a test that has not yet been resolved.</p>
 		<p>The investigators resolve encounters in turn order starting
 with the Lead Investigator and proceeding clockwise around the play
 area.</p>
@@ -456,7 +507,7 @@ to form a new deck.</p>
 		<ul>
 			<li id="research-encounters">Clue tokens allow investigators to draw and resolve
 				Research Encounter cards.</li>
-			<li>Gate tokens allow investigators to draw and resolve Other
+			<li id="other-world-encounters">Gate tokens allow investigators to draw and resolve Other
 				World Encounter cards.</li>
 			<li>The Active Expedition token allows investigators to draw
 				and resolve <a href="#expedition-deck">Expedition Encounter</a> cards.</li>
@@ -554,8 +605,8 @@ advance using the Ancient One’s <a href="#awaken-doom">rules for advancing Doo
 			even the Ancient Ones.</p>
 			<p>Gates are the main way that Doom <a href="#advance-omen">advances</a>. To prevent
 			Doom from advancing (and the Ancient One from
-			awakening), investigators need to resolve Other World
-			Encounter cards to close (discard) Gates.</p>
+			awakening), investigators need to resolve <a href="#other-world-encounters">Other World
+				Encounter</a> cards to close (discard) Gates.</p>
 		</section>
 
 		<h3 id="spawning-monsters">Spawning Monsters</h3>
@@ -675,7 +726,7 @@ to reroll dice. He determines whether he passed or failed after resolving all re
 		Improvement token with the matching icon and
 		places it below his Investigator sheet with the “+1” side up.
 		If he improves that skill a second time, he flips that token to
-		the “+2” side. An investigator’s skill is equal to the value printed
+		the “+2” side. An investigator cannot improve a single skill more than twice. An investigator’s skill is equal to the value printed
 		on his sheet plus the value of the matching Improvement token.</p>
 
 		<h3 id="complex-encounters">Complex Encounters</h3>
@@ -864,6 +915,14 @@ actions <strong>instead of becoming Delayed</strong>.</p>
 		<p>If an investigator <span class="def">recovers</span> Health or Sanity, he gains Health
 		and Sanity tokens from the token pool. An investigator cannot
 		have more Health or Sanity than his maximum.</p>
+		<p>Health or Sanity tokens that are marked with a “3” represent three
+single Health or Sanity tokens, respectively. Players may swap a “3”
+token for three single tokens or three single tokens for a “3” token
+at any time.</p>
+		<p>Effects that prevent the loss of Health or Sanity cannot be used
+		when an investigator <a href="#spend"><strong>spends</strong></a> Health or Sanity. An investigator cannot spend Health or Sanity if doing so would
+cause him to be defeated (i.e., he cannot spend his last Health or
+Sanity).</p>
 		<h3 id="defeated-investigators">Defeated Investigators</h3>
 		<p>When an investigator has zero <a href="#health-and-sanity">Health or Sanity</a>, he is
 		immediately <span class="def">defeated</span>, stops resolving any encounter or action he is currently resolving, and resolves the following steps:</p>
