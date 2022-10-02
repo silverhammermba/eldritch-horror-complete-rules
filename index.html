@@ -14,7 +14,11 @@
 		<section>
 			<h3 id="using-this-rulebook">Using this Rulebook</h3>
 
-			TODO
+			<p>The official rulebook is still the recommended way to learn the
+			game. This document is intended as a definitive resource combining
+			all official rules for all expansions, reference guides, FAQs, and
+			errata, such that all questions can be clarified by searching one
+			document.</p>
 		</section>
 
 		<h2 id="game-overview">Game Overview</h2>
@@ -46,6 +50,16 @@ investigator’s Detained Condition says, “You <strong>cannot</strong> move.�
 investigator cannot move or be moved by any action or effect.</p>
 		</section>
 
+		<section>
+			<h3 id="using-expansions">Using Expansions</h3>
+
+			<p>When playing with expansions, add
+all expansion components to their respective decks or
+pools of Eldritch Horror components. Unless otherwise
+instructed, use all components when
+playing with expansions.</p>
+		</section>
+
 		<h2 id="setup">Setup</h2>
 
 		<p>Before playing each game, perform the following steps in order.</p>
@@ -55,7 +69,7 @@ investigator cannot move or be moved by any action or effect.</p>
 		<h3 id="organize-tokens">2. Organize Tokens</h3>
 		<p>Organize the following tokens as listed below:</p>
 		<ol>
-			<li>Create the <a href="#what-are-gates">Gate</a> stack by randomizing the nine Gate tokens,
+			<li id="gate-stack">Create the <a href="#what-are-gates">Gate</a> stack by randomizing the nine Gate tokens,
 				and placing them facedown (common side up) in a stack
 				within reach of all players.
 			<ul>
@@ -517,7 +531,7 @@ does this <strong>even if</strong> there is a Monster on his space.</p>
 
 		<p>If an investigator is on a space containing one or more Monsters,
 		he <strong>must</strong> resolve a single <a href="#combat-encounters">Combat Encounter</a> against each
-		Monster on that space, one at a time, in the order of his choice.</p>
+		Monster on that space.</p>
 		<p>After an investigator resolves all Combat Encounters, if there are
 		no Monsters in his space, <strong>he may resolve another encounter</strong>.</p>
 		<h3 id="location-encounters">Location Encounters</h3>
@@ -1037,9 +1051,42 @@ copy of, he does not gain another copy of that Condition.</li>
 	once per instance of the triggered event.</li>
 		</ul>
 
-		<h2 id="discarding">Discarding</h2>
+		<h4 id="lost-in-time-and-space">Lost in Time and Space</h4>
+		The Lost in Time and Space Condition affects investigators differently than other
+		Conditions. When an investigator gains a Lost in Time and
+		Space Condition, he resolves the following effects:
+		<ul>
+			<li>He removes his Investigator token from the game board.</li>
+			<li>He passes the Lead Investigator token to another
+				investigator, if able.</li>
+			<li>He discards any Detained Condition he has.</li>
+		</ul>
+		While an investigator has a Lost in Time and Space Condition,
+		he follows the rules below:
+		<ul>
+			<li>He cannot move or perform actions.</li>
+			<li>He does not occupy any space on the game board, nor does
+				he occupy the same space as tokens or other investigators.
+				This includes other investigators that have Lost in Time
+				and Space Conditions.</li>
+			<li>He is unaffected by effects of Mythos cards, @ effects, or
+				any other game effects except those of his Lost in Time and
+				Space Condition.</li>
+			<li>His Investigator’s passive ability cannot be resolved and
+				does not affect other elements of the game.</li>
+			<li>He cannot spend resources as a part of a group.</li>
+			<li>An investigator cannot give the Lead Investigator token
+				to another investigator that has a Lost in Time and
+				Space Condition.</li>
+			<li>If a Lost in Time and Space Condition effect would “spawn
+				1 Gate” and there are no Gates in the Gate stack or discard
+				pile, he chooses one Gate on the game board instead.</li>
+			<li>An investigator that has a Lost in Time and Space
+				Condition loses the game if investigators lose the game, and
+				he wins the game if investigators win the game.</li>
+		</ul>
 
-		TODO is there value in centralizing this? How to link to this?
+		<h2 id="discarding">Discarding</h2>
 
 		<ul>
 			<li>An investigator can discard only his own possessions and
@@ -1048,23 +1095,23 @@ copy of, he does not gain another copy of that Condition.</li>
 				investigator discards that token.</li>
 			<li>Whenever a card is discarded, it is placed in a faceup discard pile
 				by its deck.</li>
-			<li>Double-sided cards, such as Spells or Conditions, are immediately
+			<li><a href="#double-sided-cards">Double-sided cards</a>, such as <a href="#spells">Spells</a> or <a href="#conditions">Conditions</a>, are immediately
 				shuffled back into their respective decks when discarded.</li>
-			<li>When an investigator searches a deck for a specific card and does not
+			<li>When an investigator <a href="#search">searches</a> a deck for a specific card and does not
 				find the card he is looking for, he also searches that deck’s discard pile.</li>
 			<li>When a deck of cards is empty, immediately shuffle its discard pile
 				to form a new deck and have another player cut the deck. The Mythos deck is never replenished.</li>
 			<li>When Clue tokens are discarded, they are placed in a faceup discard
-				pile near the Clue pool. If there are no Clue tokens remaining in the
+				pile near the <a href="#clue-pool">Clue pool</a>. If there are no Clue tokens remaining in the
 				Clue pool, place the Clue tokens from the discard pile facedown in
 				the Clue pool and randomize them.</li>
 			<li>When Gate tokens are discarded, they are placed in a faceup
-				discard pile near the Gate stack. If there are no Gate tokens
+				discard pile near the <a href="#gate-stack">Gate stack</a>. If there are no Gate tokens
 				remaining in the Gate stack, place the Gate tokens from the
 				discard pile facedown in the Gate stack and randomize them.</li>
 			<li>When Monster tokens are discarded, they are returned to the
-				Monster cup, and the cup is randomized.</li>
-			<li>Monsters that have been set aside during setup are never returned
+				<a href="#what-is-the-monster-cup">Monster cup</a>, and the cup is randomized.</li>
+			<li>Monsters that have been <a href="#set-aside">set aside</a> during setup are never returned
 				to the Monster cup. Instead, they are set aside when discarded.</li>
 			<li>All other tokens are returned to the token pool when discarded.</li>
 			<li>If an effect forces an investigator to discard a component and he
@@ -1181,9 +1228,10 @@ there are none available, he is <a href="#eliminated-players">eliminated</a>.</p
 		game board.</p>
 
 		<p>During the Encounter Phase, an investigator on a space containing
-one or more Monsters must encounter each Monster on his space, one
-at a time, in the order of his choice. An investigator resolves a Combat
-Encounter by following these steps:</p>
+		one or more Monsters must encounter each Monster on his space, one at a
+		time, in the order of his choice, <span class="fl">encountering all non-Epic Monsters
+			before Epic Monsters</span>. An investigator resolves a Combat Encounter by
+		following these steps:</p>
 
 		<ol>
 			<li><strong>Check Monster Effects:</strong> The Monster might have effects that alter how
@@ -1208,6 +1256,10 @@ Encounter by following these steps:</p>
 			</ul></li>
 		</ol>
 		<ul>
+			<li class="fl">Some Monsters require the player to test
+skills other than { and }. If a Monster has another skill icon in place of either the {
+or } test indicators, the player tests the indicated skill in
+place of the skill it replaced.</li>
 			<li>When a Monster has lost Health equal to or greater than its
 				toughness, the Monster is defeated and returned to the monster cup.</li>
 			<li>If a Monster does not have a { or } test, the investigator does
@@ -1446,6 +1498,22 @@ from.</p>
 <p>If an effect says, “unless,” is it giving you an option to resolve the effect
 following “unless.” However, if you choose not to resolve that effect,
 you must resolve the effect preceding “unless” instead.</p>
+<p class="q fl">Does an investigator recover additional Health and Sanity from
+effects, such as the Healing Words Spell or Witch Doctor Asset, if he
+has a Poisoned Condition?<p>
+<p class="a">No, an investigator with a Poisoned Condition does not
+recover Health and Sanity from a Rest action nor does he
+recover additional Health and Sanity from other effects
+during a Rest action.</p>
+<p>However, other effects that cause an investigator to recover
+Health or Sanity without performing a Rest action, such as the
+Private Care Asset, affect that investigator as normal.</p>
+<p class="q fl">Can an investigator with a Lost in Time and Space Condition
+be moved by another investigator using the Plumb the Void Spell?</p>
+<p class="a">No, an investigator who has a Lost in Time and Space
+Condition (or a Detained Condition) “cannot move.” This
+means he cannot move on his own nor be moved by any other
+effect, including the Plumb the Void Spell.</p>
 
 <h2 id="investigator-abilities">Investigator Abilities</h2>
 
