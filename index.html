@@ -168,9 +168,14 @@ correspond to it.</li>
 			<h3 id="ancient-one-specific-cards">Ancient One Specific Cards</h3>
 			<p>Each Ancient One has at least two unique decks of cards: the
 			Mystery deck and the Research deck. Some Ancient Ones
-			also have a Special Encounter deck called out in their
-			setup effect. Each card can be identified by an illustration
-			of its corresponding Ancient One on the card’s back.</p>
+			also have Special Encounter decks called out in their
+			setup effect.</p>
+			<p id="special-encounters">The illustrations on the back of each Special Encounter indicates
+the Ancient One and the Mystery or Final Mystery it corresponds
+to. Special Encounter cards also share their title with the Mystery
+or Final Mystery they correspond to.</p>
+			<p>The instructions for resolving Special Encounters are defined by the
+			Ancient One sheet or Mystery cards.</p>
 		</section>
 
 		<p>Then separate all other cards as listed below and place them
@@ -250,7 +255,7 @@ appropriate space.</li>
 cannot be examined by players unless they are instructed by some
 effect:</p>
 		<ul>
-			<li>The back of double-sided cards, such as Spells or Conditions.</li>
+			<li>The back of <a href="#double-sided-cards">double-sided cards</a>, such as Spells or Conditions.</li>
 			<li>The order and specific cards found in any deck.</li>
 			<li>The front of Clues or Gates that are in the Clue pool or Gate stack.</li>
 			<li>Mythos cards that have been returned to the game box.</li>
@@ -359,12 +364,12 @@ with a Trade action, and then continue moving.</li>
 		<p>Related Topics: <a href="#local-action">Local Action</a>, <a href="#delayed-investigators">Delayed</a></p>
 
 		<h3 id="travel-action">Travel Action</h3>
-		<p>The investigator moves his Investigator token to any adjacent
-		space.</p>
-		<p>After moving, the investigator may spend any number of
-		travel tickets to move one additional space per ticket spent.
-		Investigators can only spend Train Tickets to move along Train
-		paths, and Ship Tickets to move along Ship paths. The <a href="#action-phase-example">Action Phase Example</a>
+
+		<p>As an action, an investigator moves to any space adjacent to his current
+		space. Then he may spend any number of <a href="#prepare-for-travel-action">travel tickets</a>, moving one
+additional space along a Train path or Ship path for each Train Ticket
+token or Ship Ticket token spent, respectively.
+		The <a href="#action-phase-example">Action Phase Example</a>
 		includes an example of a Travel action.</p>
 
 		<section>
@@ -386,8 +391,16 @@ with a Trade action, and then continue moving.</li>
 		on his space.</p>
 
 		<h3 id="trade-action">Trade Action</h3>
-		<p>The investigator may trade possessions (Assets, Artifacts, Clues,
-		Spells, and travel tickets) with another investigator on his space.</p>
+
+		<p>As an action, an investigator can trade any number of <a href="#possessions">possessions</a> with
+another investigator on his space. The two investigators may freely give
+any number of possessions to the other, as long as both investigators
+agree to this trade.</p>
+		<ul>
+			<li>Condition cards, Health tokens, Sanity tokens, and Improvement
+				tokens cannot be traded.</li>
+			<li>Investigators cannot trade with <a href="#defeated-investigators">defeated</a> investigators.</li>
+		</ul>
 
 		<h3 id="prepare-for-travel-action">Prepare for Travel Action</h3>
 		<p>If the investigator is <strong>on a City space</strong>, he gains one travel ticket
@@ -733,6 +746,10 @@ may list a “When this Monster is spawned,” or @ effect.</li>
 		</section>
 
 		<h2 id="winning-the-game">Winning the Game</h2>
+		<p>The game immediately ends when an effect specifies that
+		“Investigators win the game,” or “Investigators lose the game.” In the
+		rare circumstance that both of these effects happen at the same time,
+		investigators win the game.</p>
 		<p>Investigators win the game by solving <a href="#mysteries">Mysteries</a> as indicated on the front
 		of the Ancient One sheet.</p>
 		<p>Investigators <strong>lose the game</strong> if any of the following occur:</p>
@@ -747,28 +764,63 @@ may list a “When this Monster is spawned,” or @ effect.</li>
 		</ul>
 
 		<h2 id="tests">Tests</h2>
-		<p>Many effects require investigators to resolve a test. To resolve a
-		test, the investigator rolls dice to determine whether he passes
-		or fails the test. Passing tests often provides benefits to the
-		investigator, while failing tests often have negative side effects.</p>
-		<p>To resolve a test, the investigator <strong>rolls a number of dice
-			equal to his value in the listed skill</strong>, taking into account any
-		effects that add or subtract from his skill. Investigators roll <strong>a
-			minimum of 1 die</strong> on each test.</p>
-		<p>If he rolls <strong>at least one</strong> <span class="def">success</span> (a “5” or a “6”), he <span class="def">passes</span> the
-		test. If he does not roll any successes, he <span class="def">fails</span> the test. The
-		number of successes rolled is called the <span class="def">test result</span>.</p>
-		<p>When an investigator passes or fails a test, he follows the
-		original effect’s instructions for the matching result.</p>
+		<p>Many effects require investigators to resolve a test, which involves
+		rolling dice to determine whether he passes or fails the test. Passing
+		tests often provides benefits to the investigator, while failing tests
+		often have negative side effects. When an investigator resolves a test,
+		he performs the following steps:</p>
+
+		<ol>
+			<li><strong>Determine Dice Pool:</strong> The investigator determines the number of
+				dice he will roll. This number is his <span class="def">dice pool</span>.</li>
+			<ul>
+				<li>He starts with a number equal to the <a href="#what-are-skills">skill</a> being tested.</li>
+				<li>He adds or subtracts the test modifier (the number that follows
+					the skill icon on the effect).</li>
+				<li>If he has an Improvement token for the skill being tested, he
+					adds the Improvement token’s modifier.</li>
+				<li>He may use <strong>one</strong> effect that provides a bonus (for example “Gain
+					+3 {”). If multiple effects provide a bonus, he uses only <strong>the
+						highest bonus</strong>.</li>
+				<li>He adds any “additional dice” he gains from effects that apply.
+					Additional dice are cumulative and are in addition to other
+					effects.</li>
+			</ul>
+			<li><strong>Roll Dice:</strong> He rolls a number of dice equal to his dice pool.
+				<ul>
+					<li>If an investigator’s dice pool is below 1, he rolls 1 die instead.</li>
+					<li>If an investigator’s dice pool is greater than the number of dice
+						available, he rolls as many dice as possible, counts his successes,
+						and rolls the dice again until he has rolled a number of dice
+						equal to his dice pool.</li>
+				</ul>
+				<li><strong>Determine Result:</strong> Each “5” or “6” rolled is one <span class="def">success</span>. The
+					total number of successes rolled is the <span class="def">test result</span>. If he rolls
+					at least one success, he passes the test. If he does not roll any
+					successes, he <span class="def">fails</span> the test.</li>
+				<li><strong>Resolve Pass or Fail Effect:</strong> The consequence of passing or failing
+					the test is determined by the effect that triggered the test.</li>
+		</ol>
+		<ul>
+			<li>Some effects specify only a pass effect or a fail effect. If an
+				investigator passes a test that does not have a pass effect, there is no
+				effect. Likewise, if an investigator fails a test that does not have a
+				fail effect, he suffers no ill effects.</li>
+			<li>On encounter cards, tests are declared using their skill icon
+				embedded in the text in parentheses. The test declaration may also
+				indicate a test modifier.</li>
+			<li>Effects that are dependent on a test are always preceded by “if you
+				pass,” or “if you fail.” Any effect in that sentence occurs only if you
+				pass the test or fail the test, respectively. Any effect after the period
+				or part of a new paragraph, is independent from previous effects.</li>
+		</ul>
+
 		<p class="example">Example: Lily Chen has an “Arcane Tome” Asset card which reads:
 		“When you perform a Rest action, you may test [. If you pass,
 		gain 1 Spell.” When resting, Lily resolves this test using her Lore
 		([) of 2. She rolls 2 dice with results of “1” and “3.” Since she
 		did not roll a “5” or “6,” she fails the test does not gain a Spell.</p>
-		<p>An investigator can use only one card effect that provides a skill
-		bonus during each test (for example, an Asset that reads “Gain
-		+1 [”). If he has multiple card effects that provide a bonus, he
-		uses <strong>the highest bonus</strong>.</p>
+
 		<h3 id="tests-on-cards">Tests on Cards</h3>
 		<p>On many cards, tests are declared using their skill icon
 		embedded in parenthesis following a short narrative. When an
@@ -791,15 +843,28 @@ to reroll dice.</p>
 		result is worse. He determines whether he passed or failed after resolving all rerolls.</p>
 
 		<p>Most reroll effects (including spending Clue tokens) specifically
-reroll dice during a test. Such effects cannot be used on other die
+		reroll dice <strong>during a test</strong>. Such effects cannot be used on other die
 rolls, such as the @ effect of a Blessed Condition card.</p>
 
 		<section>
 			<h3 id="what-are-skills">What are Skills?</h3>
 			<p>Each investigator has five different skills listed on the
 			bottom of his Investigator sheet. The number below
-			each skill is the number of dice the investigator rolls
+			each skill is the base number of dice the investigator rolls
 			when resolving a <a href="#tests">test</a>.</p>
+			<ul>
+				<li>Lore ([) is often tested when casting <a href="#spells">Spells</a> and resolving
+					Other World Encounters.</li>
+				<li>Influence (]) is often tested when performing the Acquire
+					Assets action and resolving General Encounters on City spaces
+					and Defeated Investigator Encounters.</li>
+				<li>Observation (|) is often tested when resolving Research
+					Encounters and Expedition Encounters.</li>
+				<li>Strength (}) is often tested when resolving Combat
+					Encounters and Expedition Encounters.</li>
+				<li>Will ({) is often tested when resolving Combat Encounters and
+					Other World Encounters.</li>
+			</ul>
 		</section>
 
 		<h3 id="improvement-tokens">Improvement Tokens</h3>
@@ -845,7 +910,7 @@ rolls, such as the @ effect of a Blessed Condition card.</p>
 		</section>
 
 		<h2 id="gaining-possessions-and-conditions">Gaining Possessions and Conditions</h2>
-		<p>Investigators frequently gain Assets, Artifacts, Spells, and
+		<p>Investigators frequently gain Assets, Artifacts, <a href="#spells">Spells</a>, and
 		Conditions. When an investigator gains a card or token, he
 		places it faceup near his Investigator sheet.</p>
 		<p>An investigator can gain a card or token only if it is available.</p>
@@ -860,7 +925,7 @@ available.</li>
 				card type.</li>
 			<ul>
 				<li><a href="#double-sided-cards">Double-sided cards</a> are gained from the bottom of the deck.</li>
-				<li>If an investigator gains a Spell or Condition that he already has,
+				<li>If an investigator gains a <a href="#spells">Spell</a> or Condition that he already has,
 					he discards it and draws a replacement, repeating this process
 					until he draws a card he does not already have (if able).</li>
 			</ul>
@@ -870,7 +935,7 @@ available.</li>
 				deck then discard pile for the first card matching the specified trait
 				and gains that card. Then he shuffles the deck.</li>
 			<ul>
-				<li>An investigator that gains a Spell or Condition in this way
+				<li>An investigator that gains a <a href="#spells">Spell</a> or Condition in this way
 					searches the deck for the first card matching the specified trait
 					he does not already have and gains that card.</li>
 			</ul>
@@ -915,7 +980,7 @@ discard pile.</li>
 
 		<ul>
 			<li>An investigator’s possessions include his Clue tokens, travel ticket
-				tokens, Asset cards, Artifact cards, and Spell cards.</li>
+				tokens, Asset cards, Artifact cards, and <a href="#spells">Spell</a> cards.</li>
 			<li>If an effect does not list a limit, it may be used only once per
 instance of the triggered event. For example, if an Asset allows an
 investigator to recover 1 additional Health when he performs a
@@ -940,6 +1005,22 @@ effects on its front.</li>
 	back into its respective deck.</li>
 <li>After a player shuffles a deck of double-sided cards, another player
 	cuts the deck.</li>
+		</ul>
+
+		<h3 id="spells">Spells</h3>
+
+		<ul>
+			<li>Spell cards are <a href="#double-sided-cards">double-sided</a>. An investigator <strong>cannot look at the
+					back of Spell cards</strong> unless an effect allows him to.</li>
+			<li>An investigator can resolve a Spell card’s effect as described on the
+				card. A Spell card’s effect may be triggered by a specific event or
+				require an action.</li>
+			<li>When an investigator resolves a Spell card’s effect, he resolves the
+				effects on the front of the card. This may include a test and/or
+				flipping the card.</li>
+			<li>An investigator cannot have multiple copies of the same Spell card.
+				If he gains a duplicate Spell card for any reason, he discards the
+				newly-gained card.</li>
 		</ul>
 
 		<h3 id="conditions">Conditions</h3>
@@ -995,6 +1076,17 @@ copy of, he does not gain another copy of that Condition.</li>
 				component from the game board and there is not enough of that
 				component on the board, they discard all of that
 				component instead.</li>
+		</ul>
+
+		<h2 id="spend">Spend</h2>
+		<ul>
+			<li>When an investigator spends a token or card, such as a Clue token,
+				he discards it in exchange for an effect.</li>
+			<li>An investigator cannot spend a token or card he does not have.</li>
+			<li>An investigator may choose not to spend a token or card he has.</li>
+			<li>An investigator cannot spend Health or Sanity if doing so would
+				cause him to be <a href="#defeated-investigators">defeated</a> (i.e., he cannot spend his last Health
+				or Sanity).</li>
 		</ul>
 
 		<h2 id="delayed-investigators">Delayed Investigators</h2>
@@ -1297,6 +1389,16 @@ referenced rules:</p>
 
 		<p>If an effect references “half” of a number, round up to determine the
 		final number.</p>
+
+		<h2 id="traits">Traits</h2>
+		<ul>
+		<li>Artifact, Asset, Condition, Spell and Mythos cards have traits.</li>
+			<li>Traits can be identified by their formatting: bold, italic, and small
+				caps (for example “<span class="trait">Weapon</span>”).</li>
+			<li>Traits have no inherent effects of their own.</li>
+	<li>Effects may refer to cards by their trait. For example, “Gain a
+		<span class="trait">Madness</span> Condition.”</li>
+	</ul>
 
 		<script>
 			/* hide elements with klass */
