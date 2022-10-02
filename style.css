@@ -16,6 +16,10 @@ h3 {
 	font-variant: small-caps;
 }
 
+h4 {
+	font-variant: small-caps;
+}
+
 section {
 	border: 1px solid;
 	padding: 10px;
@@ -27,6 +31,18 @@ li p {
 
 p.example {
 	font-style: italic;
+}
+
+p.q {
+	font-style: italic;
+}
+
+p.q:before {
+	content: "Q. ";
+}
+
+p.a:before {
+	content: "A. ";
 }
 
 @media print {
