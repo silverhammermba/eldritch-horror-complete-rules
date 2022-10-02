@@ -82,6 +82,12 @@ referenced.</li>
 				tokens and place them in piles within reach of all players. These tokens are always
 available. If the general token pool has no remaining tokens of any one type,
 track those tokens on paper or with a small object such as a coin.</li>
+			<ul>
+				<li>Eldritch tokens are a generic resource used by many effects,
+					including the Ancient One.</li>
+				<li>A component that places an Eldritch token on the game board
+					describes how investigators interact with that token.</li>
+			</ul>
 		</ol>
 		<h3 id="choose-and-place-investigators">3. Choose and Place Investigators</h3>
 		<p>Players agree upon one player to receive the Lead Investigator
@@ -179,7 +185,6 @@ correspond to it.</li>
 				deck near the Ancient One sheet. Return all remaining
 				Mythos cards to the game box without looking at them.</li>
 		</ol>
-			<p>The Mythos deck is never replenished when it is empty.</p>
 
 		<h3 id="resolve-starting-effects">9. Resolve Starting Effects</h3>
 		<p>Resolve the following effects to complete setup:</p>
@@ -452,6 +457,8 @@ to form a new deck.</p>
 			<li><a href="#defeated-investigators">Defeated Investigator</a> tokens allow investigators to resolve
 				the encounter listed on the back of the defeated investigator’s
 				sheet.</li>
+			<li>Eldritch tokens on the game board can be encountered if and only if
+				the component that placed them allows an investigator to encounter them.</li>
 		</ul>
 
 		<h2 id="phase-mythos-phase">Phase 3: Mythos Phase</h2>
@@ -504,13 +511,17 @@ to form a new deck.</p>
 			Mythos card</strong>. For example, if the Mythos card does not have the
 		spawn clues icon, investigators do not resolve the spawn clues step.</p>
 
-		<section>
+			<p>The Mythos deck is never replenished when it is empty.</p>
+
+		<section id="doom">
 			<h3 id="what-are-the-doom-and-omen-tracks">What are the Doom and Omen Tracks?</h3>
-			<p>The <span class="def">Doom track</span> measures the time remaining until the
-			<a href="#the-ancient-one-awakens">Ancient One awakens</a>. When Doom
+			<p>The <a href="#the-ancient-one-awakens">Ancient One awakens</a> when Doom reaches the “0” space of the <span class="def">Doom track</span>. When Doom
 			<span class="def">advances</span>, move the Doom token <strong>toward</strong> the “0” space of
-			the Doom track. When Doom retreats, move the Doom
+			the Doom track. If the Ancient One has not awoken, when Doom retreats, move the Doom
 			token <strong>away from</strong> the “0” space of the Doom track.</p>
+			<p>If an effect advances Doom beyond the “0” space, Doom advances
+to 0, the Ancient One awakens, and then Doom continues to
+advance using the Ancient One’s <a href="#awaken-doom">rules for advancing Doom</a>.</p>
 			<p>The <span class="def">Omen track’s</span> purpose is to advance Doom. When
 			the Omen token advances, investigators advance Doom
 			by 1 for each Gate on the game board that matches the
@@ -595,12 +606,11 @@ may list a “When this Monster is spawned,” or @ effect.</li>
 		to win the game.</p>
 		<p>Investigators <strong>lose the game</strong> if any of the following occur:</p>
 		<ul>
-			<li>If the <strong>Doom</strong> token reaches the “0” space of the Doom
-				track, the <a href="#the-ancient-one-awakens">Ancient One awakens</a>. The back of the Ancient
+			<li>If the <a href="#the-ancient-one-awakens">Ancient One awakens</a>, the back of the Ancient
 				One sheet lists how investigators can lose the game.</li>
-			<li>All investigators have been <strong>eliminated</strong> from the game.</li>
+			<li>All investigators have been <a href="#eliminated-players"><strong>eliminated</strong></a> from the game.</li>
 			<li>A card effect causes investigators to lose the game. This
-				most frequently appears on some <span class="trait">Rumor</span> Mythos cards.</li>
+				most frequently appears on some <a href="#rumors"><span class="trait">Rumor</span></a> Mythos cards.</li>
 			<li>The investigators are required to draw a Mythos card but
 				cannot because the <strong>Mythos deck is empty</strong>.</li>
 		</ul>
@@ -707,12 +717,25 @@ to reroll dice. He determines whether he passed or failed after resolving all re
 			<li>Cards and tokens on a <a href=#defeated-investigators">defeated investigator’s</a> sheet are not
 available.</li>
 		</ul>
-		<h3 id="spells-and-conditions">Spells and Conditions</h3>
-		<p>Spell and Condition cards are unique in that they have hidden
-		information on the back of their cards. When a player gains a Spell
-		or Condition card, he can <strong>only look at the front</strong> of the card.
-		<p>The card describes when an investigator flips it, at which point
-		he immediately resolves the back of the card.</p>
+
+		<h3 id="double-sided-cards">Double-Sided Cards</h3>
+		<ul>
+			<li>Double-sided cards of the same type do not share a common back and instead have hidden
+		information on the back of their cards.
+				They can be identified by the card type under the card’s name.</li>
+			<li>When a player gains a double-sided card, he can <strong>only
+					look at the front</strong> of the card. The card describes
+				when an investigator flips it, at which point
+		he immediately resolves the back of the card.</li>
+<li>Decks of double-sided cards remain faceup. Investigators may look
+	at the front of the top card of each deck of double-sided cards.</li>
+<li>When an investigator draws a random card from a deck of double-
+	sided cards, he draws the bottom card.</li>
+<li>When a double-sided card is discarded, it is immediately shuffled
+	back into its respective deck.</li>
+<li>After a player shuffles a deck of double-sided cards, another player
+	cuts the deck.</li>
+		</ul>
 
 		<h3 id="conditions">Conditions</h3>
 
@@ -727,6 +750,46 @@ copy of, he does not gain another copy of that Condition.</li>
 	as described on the card.</li>
 <li>If a Condition’s effect does not list a limit, it may only be used
 	once per instance of the triggered event.</li>
+		</ul>
+
+		<h2 id="discarding">Discarding</h2>
+
+		TODO is there value in centralizing this? How to link to this?
+
+		<ul>
+			<li>An investigator can discard only his own possessions and
+				Condition cards.</li>
+			<li>When an effect discards a token from the game board, the active
+				investigator discards that token.</li>
+			<li>Whenever a card is discarded, it is placed in a faceup discard pile
+				by its deck.</li>
+			<li>Double-sided cards, such as Spells or Conditions, are immediately
+				shuffled back into their respective decks when discarded.</li>
+			<li>When an investigator searches a deck for a specific card and does not
+				find the card he is looking for, he also searches that deck’s discard pile.</li>
+			<li>When a deck of cards is empty, immediately shuffle its discard pile
+				to form a new deck. The Mythos deck is never replenished.</li>
+			<li>When Clue tokens are discarded, they are placed in a faceup discard
+				pile near the Clue pool. If there are no Clue tokens remaining in the
+				Clue pool, place the Clue tokens from the discard pile facedown in
+				the Clue pool and randomize them.</li>
+			<li>When Gate tokens are discarded, they are placed in a faceup
+				discard pile near the Gate stack. If there are no Gate tokens
+				remaining in the Gate stack, place the Gate tokens from the
+				discard pile facedown in the Gate stack and randomize them.</li>
+			<li>When Monster tokens are discarded, they are returned to the
+				Monster cup, and the cup is randomized.</li>
+			<li>Monsters that have been set aside during setup are never returned
+				to the Monster cup. Instead, they are set aside when discarded.</li>
+			<li>All other tokens are returned to the token pool when discarded.</li>
+			<li>If an effect forces an investigator to discard a component and he
+				does not have enough of that component, he discards all of that
+				component instead.</li>
+			<li>Components that are not on the game board cannot be discarded
+				from the game board. If an effect forces investigators to discard a
+				component from the game board and there is not enough of that
+				component on the board, they discard all of that
+				component instead.</li>
 		</ul>
 
 		<h2 id="delayed-investigators">Delayed Investigators</h2>
@@ -955,12 +1018,16 @@ resolve an additional encounter.</li>
 		sheet (including Cultist information). The back of the Ancient
 		One sheet describes how the investigators can lose the game and describes the <a href="#final-mystery">Final Mystery</a> which the investigators must complete in
 	addition to the other <a href="#mysteries">Mysteries</a>.</p>
+		<p id="awaken-doom">After the Ancient One awakens, Doom cannot retreat. The
+Ancient One sheet describes what happens if Doom advances after
+the Ancient One awakens.</p>
 		<h3 id="eliminated-players">Eliminated Players</h3>
 		<p>After the Ancient One has awakened, when an investigator is
 		defeated or devoured, the player controlling that investigator is
 		<span class="def">eliminated</span>. Eliminated players do not select a new investigator
 		to control and can no longer participate in the game.</p>
 		<p>If all players are eliminated, investigators lose the game.</p>
+		<p>If the investigators win the game, any eliminated players win as well.</p>
 		<h3 id="final-mystery">Final Mystery</h3>
 		<p>Once the Ancient One awakens, it is much more difficult
 		for investigators to win the game. Each Ancient One sheet
