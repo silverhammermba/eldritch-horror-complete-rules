@@ -4,7 +4,7 @@
 
 body {
 	font-size: 16px;
-	font-family: sans-serif;
+	font-family: serif;
 }
 
 h2 {
@@ -21,17 +21,9 @@ section {
 	padding: 10px;
 }
 
-.def {
-	font-variant: small-caps;
-	font-weight: bold;
-}
-
-.trait {
-	font-variant: small-caps;
-	font-weight: bold;
+p.example {
 	font-style: italic;
 }
-
 
 @media print {
 	a {
@@ -46,25 +38,14 @@ section {
 }
 
 /* span styles */
-.event {
-	text-transform: capitalize;
+.def {
 	font-variant: small-caps;
-}
-
-.card {
 	font-weight: bold;
-	text-transform: capitalize;
 }
 
-.deck {
+.trait {
+	font-variant: small-caps;
+	font-weight: bold;
 	font-style: italic;
 }
-
-.bad {
-	text-transform: uppercase;
-	font-weight: bold;
-	color: darkred;
-	text-shadow: 1px 1px 2px gray;
-}
-
 
