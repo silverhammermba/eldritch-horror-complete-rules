@@ -40,9 +40,11 @@
 		<section>
 			<h3 id="the-golden-rules">The Golden Rules</h3>
 <p>Effects on components (such as cards) sometimes contradict
-these rules. In this
-situation, the component’s effect is correct.</p>
-<p>If an effect uses the word “cannot,” that effect is absolute.</p>
+this rulebook. In this
+situation, the component’s effect overrules this rulebook.</p>
+<p>Restrictive effects on cards are absolute. For example, an
+investigator’s Detained Condition says, “You <strong>cannot</strong> move.” That
+investigator cannot move or be moved by any action or effect.</p>
 		</section>
 
 		<h2 id="setup">Setup</h2>
@@ -115,7 +117,7 @@ track those tokens on paper or with a small object such as a coin.</li>
 correspond to it.</li>
 <li>The Ancient One’s effects may set aside Monster tokens or other
 	components.</li>
-<li>The Ancient One sheet defines the specific information of <a href="#cultist">Cultist</a>
+<li>The Ancient One sheet defines the specific information of <a href="#cultists">Cultist</a>
 	Monsters.</li>
 <li>When the Ancient One <a href="#the-ancient-one-awakens">awakens</a>, flip the sheet and resolve its
 	“awakens” effects, if any.</li>
@@ -194,7 +196,7 @@ correspond to it.</li>
 				starts on the “15” space of the Doom track.</li>
 			<li>Place the Omen token on the green (comet)
 				space of the Omen track.</li>
-			<li>Place the top four cards of the Asset deck faceup in the four
+			<li id="reserve">Place the top four cards of the Asset deck faceup in the four
 				slots of the reserve (at the bottom-left of the game board).</li>
 			<li>Spawn the number of Gates indicated on the Reference card.
 				To spawn a Gate, take the top Gate token from the Gate
@@ -228,7 +230,7 @@ correspond to it.</li>
 		<p><em>Eldritch Horror</em> is played over a series of game rounds. Each
 		round consists of three phases that are resolved in the following
 		order:</p>
-		<ol>
+		<ol id="lead-investigator">
 			<li><strong>Action Phase:</strong> Investigators perform actions to move about
 				the game board and prepare for the tasks ahead.</li>
 			<li><strong>Encounter Phase:</strong> Investigators fight Monsters or resolve
@@ -243,8 +245,11 @@ correspond to it.</li>
 		Investigators then start a new game round beginning with the
 		Action Phase. Players continue resolving game rounds until
 		they have won or lost the game.</p>
-		<p>The back of the reference guide contains a quick reference of
-		these phases.</p>
+
+		<p>If multiple effects would be resolved at the same time during the game, the active
+		player decides the order in which they are resolved.</p>
+		<p>When investigators make a decision as a group, the Lead
+		Investigator makes the final decision.</p>
 
 		<h2 id="phase-action-phase">Phase 1: Action Phase</h2>
 		<p>Performing actions is the main way in which investigators move
@@ -519,7 +524,7 @@ to form a new deck.</p>
 		<p>When a Gate is spawned, <strong>a <a href="#spawning-monsters">Monster is spawned</a> on the same
 			space</strong>.</p>
 		<p>If an effect would spawn a Gate and the Gate stack and discard
-		pile are empty, advance Doom by one instead.</p>
+		pile are empty, <strong>advance Doom by one instead</strong>.</p>
 
 		<section>
 			<h3 id="what-are-gates">What are Gates?</h3>
@@ -547,6 +552,17 @@ to form a new deck.</p>
 cup is empty. Set aside Monsters cannot be spawned if all set aside
 Monsters of the named type are on the game board.</p>
 
+		<h4 id="cultists">Cultists</h4>
+		<ul>
+			<li>Unlike most Monsters, a Cultist Monster does not have
+				information printed on the back of its Monster token.</li>
+<li>When an investigator encounters a Cultist Monster, he references
+the Cultist information on the Ancient One sheet. This includes
+its { test, } test, horror, damage, toughness, and effects.</li>
+<li>All Cultist Monsters have and icons printed on their fronts.
+These icons remind players to check the Ancient One sheet, which
+may list a “When this Monster is spawned,” or @ effect.</li>
+		</ul>
 
 		<h3 id="what-is-the-monster-cup">What is the Monster Cup?</h3>
 		<p>During setup, players choose any opaque container,
@@ -697,9 +713,28 @@ available.</li>
 		or Condition card, he can <strong>only look at the front</strong> of the card.
 		<p>The card describes when an investigator flips it, at which point
 		he immediately resolves the back of the card.</p>
+
+		<h3 id="conditions">Conditions</h3>
+
+		<ul>
+			<li>Condition cards are double-sided. An investigator <strong>cannot look at
+					the back of Conditions</strong> unless an effect allows him to.</li>
+<li>Conditions cannot be traded.</li>
+<li>An investigator <strong>cannot</strong> have multiple copies of the same
+Condition. If he would gain a Condition that he already has a
+copy of, he does not gain another copy of that Condition.</li>
+<li>Some Conditions allow an investigator to perform unique actions
+	as described on the card.</li>
+<li>If a Condition’s effect does not list a limit, it may only be used
+	once per instance of the triggered event.</li>
+		</ul>
+
 		<h2 id="delayed-investigators">Delayed Investigators</h2>
 		<p>Investigators can become Delayed by various effects. A Delayed
-		investigator cannot perform actions.</p>
+		investigator cannot perform any actions.</p>
+		<p>If an investigator would become Delayed on his turn during the Action
+Phase, he immediately ends his action and loses all remaining
+actions <strong>instead of becoming Delayed</strong>.</p>
 		<p>When an investigator becomes Delayed, he tips his Investigator
 		token on its side to remember that he is Delayed. Instead of
 		performing actions during the Action Phase, he stands up his
@@ -714,32 +749,42 @@ available.</li>
 		and Sanity tokens from the token pool. An investigator cannot
 		have more Health or Sanity than his maximum.</p>
 		<h3 id="defeated-investigators">Defeated Investigators</h3>
-		<p>When an investigator has zero Health or Sanity, he is
-		immediately <span class="def">defeated</span> and resolves the following steps:</p>
+		<p>When an investigator has zero <a href="#health-and-sanity">Health or Sanity</a>, he is
+		immediately <span class="def">defeated</span>, stops resolving any encounter or action he is currently resolving, and resolves the following steps:</p>
 		<ol>
 			<li><strong>Advance Doom:</strong> Advance Doom by 1.
 				<li><strong>Relocation:</strong> Move the Investigator token to the nearest
 					City space. Then lay the Investigator token on its side and
 					place a Health token on it to indicate the investigator has
 					lost all Health, or place a Sanity token on it to indicate the
-					investigator has lost all Sanity.</li>
+					investigator has lost all Sanity. If the investigator has lost all <strong>Health and Sanity</strong>, he chooses
+either a Health token or a Sanity token to place on his
+Investigator token.</li>
 				<li><strong>Collect Possessions:</strong> The investigator discards all Condition
 					cards, Health, Sanity, and Improvement tokens and places
-					his possessions (Assets, Artifacts, Spells, Clues, and travel
-					tickets) on his Investigator sheet. He places the sheet and
+					his <a href="#possessions">possessions</a> on his Investigator sheet. He places the sheet and
 					possessions out of the way; they will be needed if an
 					investigator encounters this defeated investigator.</li>
 				<li><strong>Pass Lead Investigator:</strong> If the defeated investigator has
 					the Lead Investigator token, he must pass the token to an
 					investigator of his choice.</li>
 		</ol>
+			<p>A defeated investigator is not considered an investigator. A
+defeated investigator cannot perform actions, resolve effects, or be
+affected by effects that affect investigators.</p>
 		<p>After resolving the steps above, investigators continue resolving
 		the current phase of the game.</p>
+
+
 		<h3 id="choosing-a-new-investigator">Choosing a New Investigator</h3>
 		<p>If an investigator is defeated, the player controlling that
 		investigator chooses a new investigator at the end of the Mythos
 		Phase. To choose a new investigator, he <strong>chooses any unused
-			Investigator and follows <a href="#choose-and-place-investigators">steps 3–4 of setup</a></strong>.</p>
+			Investigator and follows <a href="#choose-and-place-investigators">steps 3–4 of setup</a></strong>.
+		A player may not
+choose an investigator that has been previously defeated during the
+same game. If the Ancient One has <a href="#the-ancient-one-awakens">awoken</a> or the player cannot choose a new investigator because
+there are none available, he is <a href="#eliminated-players">eliminated</a>.</p>
 
 		<h3 id="encountering-defeated-investigators">Encountering Defeated Investigators</h3>
 		<p>Investigators may encounter a defeated investigator’s token in
@@ -758,8 +803,8 @@ available.</li>
 		an investigator is devoured, he is considered defeated but only
 		follows steps <strong>1 and 4</strong> of <a href="#defeated-investigators">Defeated Investigators</a>.
 		He then discards all Conditions, possessions, Health, Sanity,
-		and Improvement tokens and removes his Investigator sheet
-		and token from the game. At the end of the Mythos Phase, he
+		and Improvement tokens and returns his Investigator sheet
+		and token to the game box. At the end of the Mythos Phase, he
 		<a href="#choosing-a-new-investigator">chooses a new investigator</a>.</p>
 
 		<h2 id="combat-encounters">Combat Encounters</h2>
@@ -858,7 +903,7 @@ Encounter by following these steps:</p>
 <li>If a <strong>specific</strong> Monster ambushes an investigator, do not draw a
 Monster token. Instead, reference the Monster’s attributes from a
 token that has been set aside or is on the game board.</li>
-<li>If a <a href="#cultist">Cultist</a> Monster ambushes an investigator, do not draw a
+<li>If a <a href="#cultists">Cultist</a> Monster ambushes an investigator, do not draw a
 Monster token. Instead, reference the Cultist information on the
 Ancient One sheet.</li>
 <li>Unlike a normal Combat Encounter, if an investigator is
