@@ -166,7 +166,7 @@ correspond to it.</li>
 
 		<section>
 			<h3 id="ancient-one-specific-cards">Ancient One Specific Cards</h3>
-			<p>Each Ancient One has two unique decks of cards: the
+			<p>Each Ancient One has at least two unique decks of cards: the
 			Mystery deck and the Research deck. Some Ancient Ones
 			also have a Special Encounter deck called out in their
 			setup effect. Each card can be identified by an illustration
@@ -223,7 +223,9 @@ correspond to it.</li>
 			<li>Place the Omen token on the green (comet)
 				space of the Omen track.</li>
 			<li id="reserve">Place the top four cards of the Asset deck faceup in the four
-				slots of the reserve (at the bottom-left of the game board).</li>
+				slots of the reserve (at the bottom-left of the game board). Whenever a card is gained or discarded from the reserve, the active
+investigator places the top card from the Asset deck faceup in its
+place except during an <a href="#acquire-assets-action">Acquire Assets</a> action.</li>
 			<li>Spawn the number of Gates indicated on the Reference card.
 				To spawn a Gate, take the top Gate token from the Gate
 				stack and place it faceup on the space indicated on the
@@ -266,6 +268,22 @@ effect:</p>
 <p>Although players may legally look at this information, they may find
 the game more exciting if they do not look at this information unless
 instructed by some effect. </p>
+
+		<h2 id="set-aside">Set Aside</h2>
+
+		<p>During setup, some components might be set aside. Keep these
+		components near the Ancient One sheet.</p>
+		<ul>
+<li>Cards that have been set aside are separated by card back, shuffled,
+	and placed face down next to the Ancient One sheet.</li>
+<li>When a component that was set aside during setup is discarded, it
+is not returned to the deck or pool like other components of that
+type. Instead, it is set aside again.</li>
+<li>Components that are set aside cannot be used except by effects
+that specifically name them. For example, a Monster token that
+has been set aside cannot be spawned except by an effect that
+specifically names that token.</li>
+		</ul>
 
 		<h2 id="object-of-the-game">Object of the Game</h2>
 		<p><em>Eldritch Horror</em> is a cooperative game. All players are on the
@@ -359,8 +377,7 @@ with a Trade action, and then continue moving.</li>
 
 			<p>Each space is connected to at least one other space by
 			lines known as <span class="def">paths</span>. Two spaces are adjacent if they are connected by a single unbroken path.</p>
-			<p>Each path has a type (color) that corresponds to a type
-			of travel ticket.</p>
+			<p>Train and Ship paths each correspond to a type of travel ticket.</p>
 		</section>
 
 		<h3 id="rest-action">Rest Action</h3>
@@ -371,14 +388,16 @@ with a Trade action, and then continue moving.</li>
 		<h3 id="trade-action">Trade Action</h3>
 		<p>The investigator may trade possessions (Assets, Artifacts, Clues,
 		Spells, and travel tickets) with another investigator on his space.</p>
+
 		<h3 id="prepare-for-travel-action">Prepare for Travel Action</h3>
 		<p>If the investigator is <strong>on a City space</strong>, he gains one travel ticket
 		of his choice. The investigator cannot gain a Train Ticket unless
 		there is at least one Train path connected to his space. Likewise,
 		he cannot gain a Ship Ticket unless there is at least one Ship
 		path connected to his space.</p>
-		<p>If a player ever has more than two travel tickets, he must choose
-		two to keep and discard the rest.</p>
+		<p>An investigator cannot have more than two travel tickets. If he
+already has two travel tickets when he would gain a new one, he may
+discard one travel ticket before gaining the new travel ticket.</p>
 
 
 		<h3 id="acquire-assets-action">Acquire Assets Action</h3>
@@ -402,11 +421,11 @@ result.</li>
 	a Bank Loan.</li>
 		</ul>
 
-		<p>After performing an Acquire Assets action, replace any cards
+		<p>After completely resolving an Acquire Assets action, replace any cards
 		discarded or gained from the reserve by drawing replacement
 		cards from the Asset deck.</p>
 
-		<p>Related Topics: Gaining Possessions and Conditions</p>
+		<p>Related Topics: <a href="#gaining-possessions-and-conditions">Gaining Possessions and Conditions</a></p>
 
 
 		<h3 id="component-actions">Component Actions</h3>
@@ -527,10 +546,32 @@ space’s name.</li>
 		<ul>
 			<li id="research-encounters">Clue tokens allow investigators to draw and resolve
 				Research Encounter cards.</li>
+			<ul>
+				<li>When a Research Encounter says, “this Clue,” it is referring to the
+Clue being encountered.</li>
+				<li>If the Clue token being encountered is not gained or discarded, it
+					remains on its space and can be encountered again.</li>
+				<li>When a Research Encounter says, “additional Clue,” it is referring
+					to Clues in the Clue pool.</li>
+			</ul>
 			<li id="other-world-encounters">Gate tokens allow investigators to draw and resolve Other
 				World Encounter cards.</li>
+			<ul>
+				<li>When an Other World Encounter says, “this Gate,” it is referring
+					to the Gate being encountered.</li>
+				<li>If an Other World Encounter card instructs an investigator to
+					“close this Gate,” he discards the Gate token from his space.</li>
+				<li>While an investigator is resolving an Other World Encounter, he is
+still considered to be on his current space and is not removed from
+the game board.</li>
+			</ul>
 			<li>The Active Expedition token allows investigators to draw
 				and resolve <a href="#expedition-deck">Expedition Encounter</a> cards.</li>
+			<ul>
+		<li>After resolving an Expedition Encounter, the investigator
+		moves the Active Expedition token to the space that matches
+		the newly-revealed top card of the Expedition Encounter deck.</li>
+		</ul>
 			<li>Rumor tokens allow investigators to resolve the encounter
 				listed on the <span class="trait">Rumor</span> Mythos card that refers to that space.</li>
 			<li><a href="#defeated-investigators">Defeated Investigator</a> tokens allow investigators to resolve
@@ -542,7 +583,11 @@ space’s name.</li>
 
 		<h2 id="phase-mythos-phase">Phase 3: Mythos Phase</h2>
 		<p>During this phase, the Lead Investigator draws the top card of
-		the Mythos deck. There are seven possible effects on a Mythos
+		the Mythos deck. If the Mythos deck is empty, the discard pile is not shuffled into
+the deck. Instead, if a Mythos card cannot be drawn, the Mythos
+Phase ends and investigators lose the game.</p>
+
+		<p>There are seven possible effects on a Mythos
 		card, and the Lead Investigator resolves them <strong>in the order they
 			appear</strong> (left to right, starting from the top). The order and
 		effects of each element are listed below:</p>
@@ -559,8 +604,17 @@ space’s name.</li>
 			lower-right corner as a visual reminder.</p>
 			<p>Resolve these effects in the following order:
 			Monsters, Ancient One sheet, <span class="trait">Ongoing</span>
-			Mythos cards, and lastly investigator
-			possessions and Conditions.</p>
+			Mythos cards, and lastly starting with the Lead Investigator
+and proceeding clockwise, each investigator resolves the @ effect
+on each possession and Condition he has, if any, in the order of his
+choice.</p>
+			<p>If a Mythos card has the icon on the lower-right corner, it is a
+reminder that the card has a @ effect. That card does not cause
+other @ effects to be resolved.</p>
+			<p>If a Monster is spawned or an investigator gains a component
+while investigators are resolving @ effects, they do not resolve the
+@ effect on that Monster or component.</p>
+
 			<h3 id="spawn-gates">Spawn Gates</h3>
 			<p><a href="#spawning-gates">Spawn a number of Gates</a> as defined by the
 			Reference card.</p>
@@ -590,8 +644,6 @@ space’s name.</li>
 			Mythos card</strong>. For example, if the Mythos card does not have the
 		spawn clues icon, investigators do not resolve the spawn clues step.</p>
 
-			<p>The Mythos deck is never replenished when it is empty.</p>
-
 		<section id="doom">
 			<h3 id="what-are-the-doom-and-omen-tracks">What are the Doom and Omen Tracks?</h3>
 			<p>The <a href="#the-ancient-one-awakens">Ancient One awakens</a> when Doom reaches the “0” space of the <span class="def">Doom track</span>. When Doom
@@ -601,10 +653,12 @@ space’s name.</li>
 			<p>If an effect advances Doom beyond the “0” space, Doom advances
 to 0, the Ancient One awakens, and then Doom continues to
 advance using the Ancient One’s <a href="#awaken-doom">rules for advancing Doom</a>.</p>
-			<p>The <span class="def">Omen track’s</span> purpose is to advance Doom. When
-			the Omen token advances, investigators advance Doom
-			by 1 for each Gate on the game board that matches the
-			current Omen symbol.</p>
+			<p>The <span class="def">Omen track’s</span> purpose is to advance Doom. When the Omen advances, move the Omen token the indicated
+number of spaces clockwise around the Omen track one space at a
+time. For each space it enters, advance Doom by one for each Gate
+on the game board that corresponds to the current Omen.</p>
+			<p>The “current Omen” is the icon on the space of the Omen track
+containing the Omen token.</p>
 		</section>
 
 		<h3 id="spawning-gates">Spawning Gates</h3>
@@ -724,10 +778,21 @@ may list a “When this Monster is spawned,” or @ effect.</li>
 		investigator to roll more or fewer dice in the test.</p>
 		<p>Note that most gameplay terms are capitalized on cards to help
 		differentiate them from narrative text.</p>
+
 		<h3 id="rerolling-dice">Rerolling Dice</h3>
 		<p>Immediately after rolling dice during a test, an investigator
-		may spend a Clue token to reroll one die. There is no limit to the number of Clues he can spend
-to reroll dice. He determines whether he passed or failed after resolving all rerolls.</p>
+		may spend a Clue token to reroll one die.</p>
+		<p>If multiple effects allow an investigator to reroll a die, he may
+resolve each effect separately. There is no limit to the number of
+times a die or test can be rerolled, so long as the investigator has
+the means to do so. There is no limit to the number of Clues he can spend
+to reroll dice.</p>
+		<p>When a die is rerolled, use the result of the reroll, even if the new
+		result is worse. He determines whether he passed or failed after resolving all rerolls.</p>
+
+		<p>Most reroll effects (including spending Clue tokens) specifically
+reroll dice during a test. Such effects cannot be used on other die
+rolls, such as the @ effect of a Blessed Condition card.</p>
 
 		<section>
 			<h3 id="what-are-skills">What are Skills?</h3>
@@ -758,11 +823,6 @@ to reroll dice. He determines whether he passed or failed after resolving all re
 		<span class="def">pass effect</span> in the middle of the card. If he fails the test, he resolves the card’s <span class="def">fail effect</span> at the bottom of the card.
 		He resolves the entire effect in the appropriate box (which may
 		involve additional tests), then discards the card.</p>
-		<p>If an Other World Encounter card instructs an investigator to
-		“close this Gate,” he discards the Gate token from his space.</p>
-		<p>After resolving an Expedition Encounter, the investigator
-		moves the Active Expedition token to the space that matches
-		the newly-revealed top card of the Expedition Encounter deck.</p>
 
 		<section class="example">
 			<h3 id="other-world-encounter-example">Other World Encounter Example</h3>
@@ -799,14 +859,14 @@ available.</li>
 				draws one card from the top of the deck matching the specified
 				card type.</li>
 			<ul>
+				<li><a href="#double-sided-cards">Double-sided cards</a> are gained from the bottom of the deck.</li>
 				<li>If an investigator gains a Spell or Condition that he already has,
 					he discards it and draws a replacement, repeating this process
 					until he draws a card he does not already have (if able).</li>
-				<li><a href="#double-sided-cards">Double-sided cards</a> are gained from the bottom of the deck.</li>
 			</ul>
 			<li><strong>Gaining a Card with a Specific Trait:</strong> Some effects instruct an
 				investigator to gain a card with a specific trait (for example, “Gain
-				a <span class="trait">Madness</span> Condition”). The investigator searches that card type’s
+				a <span class="trait">Madness</span> Condition”). The investigator <a href="#search">searches</a> that card type’s
 				deck then discard pile for the first card matching the specified trait
 				and gains that card. Then he shuffles the deck.</li>
 			<ul>
@@ -816,7 +876,7 @@ available.</li>
 			</ul>
 			<li><strong>Gaining a Specific Card:</strong> Some effects instruct an investigator to
 				gain a specific card by name (for example, “Gain an Axe Asset”).
-				The investigator searches that card type’s deck then discard pile
+				The investigator <a href="#search">searches</a> that card type’s deck then discard pile
 				for the first card matching the specified name and gains that card.
 				Then he shuffles the deck.</li>
 			<ul>
@@ -837,6 +897,29 @@ available.</li>
 				<a href="#clue-pool">Clue pool</a>, and places it near his Investigator sheet. When a
 				<a href="#research-encounters">Research Encounter</a> card instructs the investigator to “gain this
 				clue,” he gains the Clue token from his space.</li>
+		</ul>
+
+		<h3 id="search">Search</h3>
+
+		<ul>
+			<li>When an investigator searches for a card, he looks at cards from
+the bottom of the deck until he finds a card that matches his
+search criteria.</li>
+<li>If an investigator does not find a card that matches his search
+criteria while searching a deck, he then searches that deck’s
+discard pile.</li>
+<li>After a deck is searched, the investigator shuffles that deck.</li>
+		</ul>
+
+		<h3 id="possessions">Possessions</h3>
+
+		<ul>
+			<li>An investigator’s possessions include his Clue tokens, travel ticket
+				tokens, Asset cards, Artifact cards, and Spell cards.</li>
+			<li>If an effect does not list a limit, it may be used only once per
+instance of the triggered event. For example, if an Asset allows an
+investigator to recover 1 additional Health when he performs a
+Rest action, he may only use that effect once per Rest action.</li>
 		</ul>
 
 		<h3 id="double-sided-cards">Double-Sided Cards</h3>
@@ -946,7 +1029,7 @@ Sanity).</p>
 		immediately <span class="def">defeated</span>, stops resolving any encounter or action he is currently resolving, and resolves the following steps:</p>
 		<ol>
 			<li><strong>Advance Doom:</strong> Advance Doom by 1.
-				<li><strong>Relocation:</strong> Move the Investigator token to the nearest
+				<li><strong>Relocation:</strong> Move the Investigator token to the <a href="#nearest">nearest</a>
 					City space. Then lay the Investigator token on its side and
 					place a Health token on it to indicate the investigator has
 					lost all Health, or place a Sanity token on it to indicate the
@@ -1112,6 +1195,16 @@ resolve an additional encounter.</li>
 
 		<p>Related Topics:  Set Aside</p>
 
+		<h2 id="nearest">Nearest</h2>
+		<p>When determining the “nearest” <a href="#what-are-spaces-and-paths">space</a> or token, find the space or
+			token separated by the fewest number of interconnected <a href="#what-are-spaces-and-paths">paths</a>.</p>
+		<ul>
+		<li>If two or more spaces are tied for nearest, the active investigator
+			chooses.</li>
+		<li>If the origin space matches the specifications or contains the
+			specified token, that space or token is the nearest.</li>
+		</ul>
+
 		<h2 id="rumors">Rumors</h2>
 		<p><span class="trait">Rumor</span> Mythos cards often place Rumor
 		tokens on specific spaces of the game board.
@@ -1120,7 +1213,7 @@ resolve an additional encounter.</li>
 		Encounter Phase. To do so, he resolves the
 		effect on that Mythos card instead of resolving
 		an encounter card.</p>
-		<p>When a Mythos card is “solved,” discard the card along with
+		<p>When a <span class="trait">Rumor</span> Mythos card is “solved,” discard the card along with
 		any tokens on it, then discard the corresponding Rumor token
 		from the game board.</p>
 		<section>
@@ -1131,6 +1224,8 @@ resolve an additional encounter.</li>
 			determined by drawing one Clue token from the Clue
 			pool and using the space indicated by the back of the
 			token. The drawn Clue token is then discarded.</p>
+			<p>If there are no Clue tokens remaining in the Clue pool or discard
+			pile, the Lead Investigator chooses a space instead.</p>
 		</section>
 
 		<h2 id="mysteries">Mysteries</h2>
@@ -1192,6 +1287,16 @@ referenced rules:</p>
 					on oneself unless it specifies “another investigator.”</li>
 			</ol>
 		</section>
+
+		<h2 id="return-to-the-game-box">Return to the Game Box</h2>
+
+		<p>Components that have been returned to the game box are removed
+		from the game unless specifically recalled from the game box.</p>
+
+		<h2 id="rounding">Rounding</h2>
+
+		<p>If an effect references “half” of a number, round up to determine the
+		final number.</p>
 
 		<script>
 			/* hide elements with klass */
