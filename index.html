@@ -37,6 +37,14 @@
 			well as the in-game character.</p>
 		</section>
 
+		<section>
+			<h3 id="the-golden-rules">The Golden Rules</h3>
+<p>Effects on components (such as cards) sometimes contradict
+these rules. In this
+situation, the component’s effect is correct.</p>
+<p>If an effect uses the word “cannot,” that effect is absolute.</p>
+		</section>
+
 		<h2 id="setup">Setup</h2>
 
 		<p>Before playing each game, perform the following steps in order.</p>
@@ -46,15 +54,32 @@
 		<h3 id="organize-tokens">2. Organize Tokens</h3>
 		<p>Organize the following tokens as listed below:</p>
 		<ol>
-			<li> Create the Gate stack by randomizing the nine Gate tokens,
+			<li>Create the <a href="#what-are-gates">Gate</a> stack by randomizing the nine Gate tokens,
 				and placing them facedown (common side up) in a stack
 				within reach of all players.</li>
-			<li> Create the Clue pool by placing the Clue tokens facedown
+			<li id="clue-pool">Create the <a href="#what-are-clues">Clue</a> pool by placing the Clue tokens facedown
 				(common side up) in a pile within reach of all players and
 				randomize them.</li>
-			<li> Create the general token pool by taking all Health, Sanity,
+			<ul>
+				<li>Clues are kept facedown in the Clue pool until they are spawned,
+					discarded, or gained by investigators.</li>
+<li>When a Clue token is discarded, it is placed in a faceup discard
+pile near the Clue pool until the Clue pool is empty. When there
+are no Clue tokens remaining in the Clue pool, place all discarded
+Clue tokens facedown in the Clue pool and randomize them.</li>
+<li>When an effect spawns a Clue, draw one random Clue token from
+the Clue pool and place it on the space indicated on the front of
+that token.</li>
+<li>When an effect spawns a Clue on a specific space, draw one Clue
+token from the Clue pool and place it on the space specified by the
+effect. The space indicated on the front of the Clue token is not
+referenced.</li>
+			</ul>
+			<li>Create the general token pool by taking all Health, Sanity,
 				Improvement, Travel Ticket, Eldritch, Mystery, and Rumor
-				tokens and place them in piles within reach of all players.</li>
+				tokens and place them in piles within reach of all players. These tokens are always
+available. If the general token pool has no remaining tokens of any one type,
+track those tokens on paper or with a small object such as a coin.</li>
 		</ol>
 		<h3 id="choose-and-place-investigators">3. Choose and Place Investigators</h3>
 		<p>Players agree upon one player to receive the Lead Investigator
@@ -78,9 +103,25 @@
 		Ancient One provides a different game experience. For their first
 		game, it is recommended players choose “Azathoth,” as he is the
 		most straightforward Ancient One. Place the chosen sheet faceup
-		(displaying a Doom value in the top
+		(displaying a <a href="#what-are-the-doom-and-omen-tracks">Doom</a> value in the top
 		left corner) near the game board and
 		<strong>resolve any setup effects on the sheet</strong>.
+
+		<ul>
+			<li>The chosen Ancient One sheet determines the
+				Ancient One for the entire game.</li>
+<li>The Ancient One’s illustration is featured on the back of the
+	<a href="#special-encounters">Special Encounters</a>, <a href="#research-encounters">Research Encounters</a>, and <a href="#mysteries">Mysteries</a> that
+correspond to it.</li>
+<li>The Ancient One’s effects may set aside Monster tokens or other
+	components.</li>
+<li>The Ancient One sheet defines the specific information of <a href="#cultist">Cultist</a>
+	Monsters.</li>
+<li>When the Ancient One <a href="#the-ancient-one-awakens">awakens</a>, flip the sheet and resolve its
+	“awakens” effects, if any.</li>
+		</ul>
+		<p>Related Topics: <a href="#phase-mythos-phase">Mythos</a>, Set Aside</p>
+
 		<h3 id="create-monster-cup">6. Create Monster Cup</h3>
 		<p>Take all non-epic Monster tokens and place them in an opaque
 		container such as a bowl, mug, or the cover of the game box
@@ -117,8 +158,7 @@
 
 		<h3 id="build-mythos-deck">8. Build Mythos Deck</h3>
 
-		<p>During step 8 of setup, players build the Mythos deck.
-		The Mythos deck is built differently each game, based on the
+		<p>The Mythos deck is built differently each game, based on the
 		instructions on the bottom of the Ancient One sheet. To build this deck,
 		perform the following steps:</p>
 		<ol>
@@ -137,6 +177,7 @@
 				deck near the Ancient One sheet. Return all remaining
 				Mythos cards to the game box without looking at them.</li>
 		</ol>
+			<p>The Mythos deck is never replenished when it is empty.</p>
 
 		<h3 id="resolve-starting-effects">9. Resolve Starting Effects</h3>
 		<p>Resolve the following effects to complete setup:</p>
@@ -206,28 +247,36 @@
 		these phases.</p>
 
 		<h2 id="phase-action-phase">Phase 1: Action Phase</h2>
-		<p>During this phase, each investigator resolves up to two actions.
-		Performing actions is the main way in which investigators move
+		<p>Performing actions is the main way in which investigators move
 		about the game board and acquire beneficial cards and tokens
 		(such as Asset cards and travel tickets).</p>
-		<p>This phase starts with the Lead Investigator. He performs two
-		actions of his choice, then the investigator to his left performs
-		two actions, and so on, until each investigator has performed
-		his actions.</p>
+		<p>During the Action Phase, each investigator may perform up to two
+		actions. The <a href="#lead-investigator">Lead Investigator</a> performs his two actions first, then
+proceeding clockwise around the play area, each other investigator
+performs his two actions.</p>
+		<ul>
+		<li><strong>Important:</strong> Each investigator can perform each action <strong>only
+			once</strong> during a round. For example, an investigator cannot
+		perform two Rest actions.</li>
+		<li>If an investigator cannot or does not wish to perform an action, he
+			may choose not to perform his action or actions.</li>
+<li>An investigator must fully resolve an action before performing
+another action. For example, he cannot interrupt a Travel action
+with a Trade action, and then continue moving.</li>
+		</ul>
 		<p>During the Action Phase, investigators may perform the
 		following actions. The detailed rules for these actions are
 		explained in the following sections.</p>
 		<ul>
-			<li>Travel</li>
-			<li>Rest</li>
-			<li>Trade</li>
-			<li>Prepare for Travel</li>
-			<li>Acquire Assets</li>
-			<li>Component Actions</li>
+			<li><a href="#travel-action">Travel</a></li>
+			<li><a href="#rest-action">Rest</a></li>
+			<li><a href="#trade-action">Trade</a></li>
+			<li><a href="#prepare-for-travel-action">Prepare for Travel</a></li>
+			<li><a href="#acquire-assets-action">Acquire Assets</a></li>
+			<li><a href="#component-actions">Component Actions</a></li>
 		</ul>
-		<p><strong>Important:</strong> Each investigator can perform each action <strong>only
-			once</strong> during a round. For example, an investigator cannot
-		perform two Rest actions.</p>
+
+		<p>Related Topics: <a href="#local-action">Local Action</a>, <a href="#delayed-investigators">Delayed</a></p>
 
 		<h3 id="travel-action">Travel Action</h3>
 		<p>The investigator moves his Investigator token to any adjacent
@@ -246,8 +295,8 @@
 			Spaces include named locations (such as “Arkham”), as
 			well as numbered locations.</p>
 
-			<p>Each space is connected to at least one adjacent space by
-			lines known as <span class="def">paths</span>.</p>
+			<p>Each space is connected to at least one other space by
+			lines known as <span class="def">paths</span>. Two spaces are adjacent if they are connected by a single unbroken path.</p>
 			<p>Each path has a type (color) that corresponds to a type
 			of travel ticket.</p>
 		</section>
@@ -271,32 +320,60 @@
 
 
 		<h3 id="acquire-assets-action">Acquire Assets Action</h3>
-		<p>If the investigator is <strong>on a City space</strong>, he may attempt to
-		acquire Asset cards from the reserve. He <a href="#tests">tests</a> his Influence
-		(]) by rolling dice and gains Assets of his choice from the
-		reserve with total <span class="def">value</span> (the number in the upper-left corner) equal to or less than the number of
-		successes rolled.</p>
-		<p>If he does not gain any cards, the investigator may discard one
-		card of his choice from the reserve.</p>
+
+		<p>As an action, an investigator <strong>on a City space</strong> <a href="#tests">tests</a> ]. Then he may
+		gain any number of cards from the <a href="#reserve">reserve</a> with total <span class="def">value</span> (the number in the upper-left corner) equal to or
+less than the test result.
+<ul>
+	<li>If he is unable or chooses not to gain any cards from the reserve, he
+		may instead discard one card of his choice from the reserve.</li>
+	<li>An investigator on a space containing a Monster <strong>cannot</strong> perform
+	this action.</li>
+</ul>
+
+		<h4 id="bank-loan">Bank Loan</h4>
+		<ul>
+			<li>When an investigator performs an Acquire Assets action, he may
+gain a Debt Condition to immediately add 2 successes to his test
+result.</li>
+<li>If an investigator already has a Debt Condition, he cannot acquire
+	a Bank Loan.</li>
+		</ul>
+
 		<p>After performing an Acquire Assets action, replace any cards
 		discarded or gained from the reserve by drawing replacement
 		cards from the Asset deck.</p>
-		<p>An investigator <strong>cannot</strong> perform this action if there is a Monster
-		on his space.</p>
+
+		<p>Related Topics: Gaining Possessions and Conditions</p>
+
 
 		<h3 id="component-actions">Component Actions</h3>
 		<p>The investigator may perform an action listed on one of his
-		components (such as a card or his Investigator sheet). These
+		components (such as Investigator sheets, Conditions, and <a href="#possessions">possessions</a>). These
 		actions are preceded by the word “Action” in bold.</p>
-		<p>Although an investigator cannot perform a component action
+
+		<p>Like all actions, each component action can only be performed
+once per round. Although an investigator cannot perform a component action
 		from a single component more than once each round, he can
-		perform component actions of different components.</p>
+		perform component actions of different components. Multiple investigators <strong>cannot</strong> perform the same
+action on a component during a single round, except for local
+actions. For example, if an investigator uses a component action
+on an Asset and then trades it to another investigator, the new
+owner cannot use the component action that round.</p>
+
 		<p class="example">Example: Lily Chen uses the action ability printed on her
 		Investigator sheet. Then, for her second action, she could perform
 		an action printed on an Asset card she has.</p>
-		<p>An investigator may also perform some actions using
-		components held by other investigators on his space. These
-		actions are preceded by the phrase “Local Action” in bold.</p>
+
+		<ul>
+			<li>An action ability on an Investigator sheet can be performed only
+				by that investigator.</li>
+			<li>An action ability on a possession or Condition can be performed
+				only by the investigator who has the card.</li>
+			<li id="local-action">An investigator may also perform some actions using
+				components held by other investigators on his space. These
+				actions are preceded by the phrase “Local Action” in bold.</li>
+		</ul>
 
 
 		<section class="example">
@@ -310,14 +387,14 @@
 				<li>During his Travel action, he decides to spend his Train
 					Ticket to move one additional space along the Train
 					path to Arkham.</li>
-				<li><p>For Silas’s second action, he decides to perform a Rest
+				<li>For Silas’s second action, he decides to perform a Rest
 					action to recover 1 Health and 1 Sanity. Since he already
 					has Sanity tokens equal to his maximum Sanity, he only
 					recovers the 1 Health. He takes 1 Health from the token
-					pool and places it by his Investigator sheet.</p>
-					<p>Silas has performed his two actions. The investigator to
-					his left may now perform two actions.</p></li>
+					pool and places it by his Investigator sheet.</li>
 			</ol>
+<p>Silas has performed his two actions. The investigator to
+					his left may now perform two actions.</p>
 		</section>
 
 		<h2 id="phase-encounter-phase">Phase 2: Encounter Phase</h2>
@@ -343,7 +420,8 @@
 		<h3 id="location-encounters">Location Encounters</h3>
 		<p>The investigator draws an encounter card matching his space’s
 		artwork or from the General Encounter deck. He resolves the
-		effect that matches his current space, then discards the card.</p>
+		effect that matches his current space, then discards the card. When an encounter deck is empty, immediately shuffle its discard pile
+to form a new deck.</p>
 		<p>If an investigator has multiple types of encounter cards that he
 		could draw, he chooses which deck to draw from.</p>
 		<p class="example">Example: An investigator is on Arkham. He can choose to draw
@@ -440,6 +518,8 @@
 		Gate token.</p>
 		<p>When a Gate is spawned, <strong>a <a href="#spawning-monsters">Monster is spawned</a> on the same
 			space</strong>.</p>
+		<p>If an effect would spawn a Gate and the Gate stack and discard
+		pile are empty, advance Doom by one instead.</p>
 
 		<section>
 			<h3 id="what-are-gates">What are Gates?</h3>
@@ -463,6 +543,11 @@
 		immediately after spawning it (for example,
 		“When this Monster is spawned, move it to
 		Heart of Africa”).</p>
+		<p>Monsters cannot be spawned from the Monster cup if the Monster
+cup is empty. Set aside Monsters cannot be spawned if all set aside
+Monsters of the named type are on the game board.</p>
+
+
 		<h3 id="what-is-the-monster-cup">What is the Monster Cup?</h3>
 		<p>During setup, players choose any opaque container,
 		such as the game box lid, to serve as the Monster
@@ -475,6 +560,8 @@
 		<p>When an effect spawns a Clue, take one random Clue token
 		from the Clue pool and place it facedown on the space
 		indicated on the Clue token.</p>
+		<p>Clues cannot be spawned or gained from the Clue pool if the Clue
+		pool and discard pile are empty.</p>
 
 		<section>
 			<h3 id="what-are-clues">What are Clues?</h3>
@@ -536,9 +623,8 @@
 		differentiate them from narrative text.</p>
 		<h3 id="rerolling-dice">Rerolling Dice</h3>
 		<p>Immediately after rolling dice during a test, an investigator
-		may spend a Clue token to reroll one die. He may perform this
-		multiple times, as long as he spends a Clue token each time. He
-		determines whether he passed or failed after resolving all rerolls.</p>
+		may spend a Clue token to reroll one die. There is no limit to the number of Clues he can spend
+to reroll dice. He determines whether he passed or failed after resolving all rerolls.</p>
 
 		<section>
 			<h3 id="what-are-skills">What are Skills?</h3>
@@ -557,15 +643,16 @@
 		If he improves that skill a second time, he flips that token to
 		the “+2” side. An investigator’s skill is equal to the value printed
 		on his sheet plus the value of the matching Improvement token.</p>
+
 		<h3 id="complex-encounters">Complex Encounters</h3>
 		<p>Expedition Encounters, Other World Encounters, and Special
 		Encounters are rewarding but dangerous adventures called
 		complex encounters. Each of these cards has three effects. To
-		resolve these encounters, an investigator first resolves the initial
-		effect (the top box of the card). Depending upon the result of
+		resolve these encounters, an investigator first resolves the <span class="def">initial
+			effect</span> (the top box of the card). Depending upon the result of
 		this effect, he immediately resolves <strong>one</strong> of the other two effects.</p>
-		<p>If he passes the test in the initial effect, he resolves the card’s
-		pass effect. If he fails the test, he resolves the card’s fail effect.
+		<p>If he passes the <a href="#tests">test</a> in the initial effect, he resolves the card’s
+		<span class="def">pass effect</span> in the middle of the card. If he fails the test, he resolves the card’s <span class="def">fail effect</span> at the bottom of the card.
 		He resolves the entire effect in the appropriate box (which may
 		involve additional tests), then discards the card.</p>
 		<p>If an Other World Encounter card instructs an investigator to
@@ -598,6 +685,12 @@
 		<p>Investigators frequently gain Assets, Artifacts, Spells, and
 		Conditions. When an investigator gains a card or token, he
 		places it faceup near his Investigator sheet.</p>
+		<p>An investigator can gain a card or token only if it is available.</p>
+		<ul>
+			<li>A card is available if it is in the deck, discard pile, or reserve.</li>
+			<li>Cards and tokens on a <a href=#defeated-investigators">defeated investigator’s</a> sheet are not
+available.</li>
+		</ul>
 		<h3 id="spells-and-conditions">Spells and Conditions</h3>
 		<p>Spell and Condition cards are unique in that they have hidden
 		information on the back of their cards. When a player gains a Spell
@@ -668,35 +761,51 @@
 		and Improvement tokens and removes his Investigator sheet
 		and token from the game. At the end of the Mythos Phase, he
 		<a href="#choosing-a-new-investigator">chooses a new investigator</a>.</p>
-		<h2 id="combat-encounters">Combat Encounters</h2>
-		<p>Resolving Combat Encounters is the main way in which
-		investigators can defeat Monsters to remove them from the
-		game board.</p>
-		<p>When encountering a Monster, the investigator flips the
-		Monster token facedown and reads the information on the
-		back of the token. He then resolves two tests, first a <span class="def">will</span>
-		test and then a <span class="def">strength test</span>, to determine the result of the
-		Combat Encounter.</p>
 
-		<h3 id="will-test">Will Test</h3>
-		<p>The investigator resolves the Will ({) test listed on the
-		Monster token.</p>
-		<p>If the Monster’s <span class="def">horror</span> (the number next to the Sanity icon) is <strong>greater than</strong> the number of
-		successes rolled (“5”s and “6”s), the investigator loses Sanity
-		equal to the difference.</p>
-		<h3 id="strength-test">Strength Test</h3>
-		<p>The investigator resolves the Strength (}) test listed on the
-		Monster token.</p>
-		<p>If the Monster’s <span class="def">damage</span> (the number next to the Health icon) is <strong>greater than</strong> the number of
-		successes rolled, the investigator loses Health equal to the
-		difference.</p>
-		<p>The Monster loses Health equal to the number of successes
-		rolled. Indicate this by placing Health tokens on the Monster
-		token. When a Monster has lost Health equal to or greater than
-		its toughness, the Monster is defeated and returned to the
-		Monster cup.</p>
-		<p>If the investigator did not defeat the Monster, it remains on his
-		space along with any Health tokens on it.</p>
+		<h2 id="combat-encounters">Combat Encounters</h2>
+
+		<p>Resolving Combat Encounters is the main way in which
+		investigators can defeat <a href="#monsters">Monsters</a> to remove them from the
+		game board.</p>
+
+		<p>During the Encounter Phase, an investigator on a space containing
+one or more Monsters must encounter each Monster on his space, one
+at a time, in the order of his choice. An investigator resolves a Combat
+Encounter by following these steps:</p>
+
+		<ol>
+			<li><strong>Check Monster Effects:</strong> The Monster might have effects that alter how
+				the investigator resolves the combat. Flip the
+				Monster token facedown and read the information on the
+				back of the token before resolving any other part of the Combat Encounter.</li>
+			<li><strong>Resolve Will Test:</strong> The investigator resolves the Will ({) <a href="#tests">test</a> listed on the
+		Monster token.</li>
+			<ul>
+				<li>If the Monster’s <span class="def">horror</span> (the number next to the Sanity icon) is greater than the test result, the
+					investigator loses Sanity equal to the difference.</li>
+			</ul>
+			<li><strong>Resolve Strength Test:</strong> The investigator resolves the Strength (}) <a href="#tests">test</a> listed on the
+		Monster token.</li>
+			<ul>
+				<li>If the Monster’s <span class="def">damage</span> (the number next to the Health icon) is greater than the test result, the
+					investigator loses Health equal to the difference.</li>
+				<li>If he passes, the Monster loses Health equal to the test result.
+					Indicate this by placing a equal number of Health tokens on
+					the Monster token. The investigator and Monster lose
+					Health simultaneously.</li>
+			</ul>
+		</ol>
+		<ul>
+			<li>When a Monster has lost Health equal to or greater than its
+				toughness, the Monster is defeated and returned to the monster cup.</li>
+			<li>If a Monster does not have a { or } test, the investigator does
+				not resolve that test.</li>
+			<li>If an investigator defeats every Monster on his space during the
+				Encounter Phase, he may resolve an additional encounter of
+				his choice.</li>
+		<li>If the investigator did not defeat the Monster, it remains on his
+		space along with any Health tokens on it.</li>
+		</ul>
 
 		<section class="example">
 			<h3 id="combat-example">Combat Example</h3>
@@ -738,9 +847,26 @@
 		are not on the game board. When an effect says “A Monster
 		ambushes you,” the investigator draws one random Monster
 		from the Monster cup and immediately encounters it in
-		combat. After resolving combat, he returns the Monster to
-		the Monster cup (even if he did not defeat it) and continues
-		resolving the effect that caused the ambush.</p>
+		<a href="#combat-encounters">combat</a>.</p>
+
+		<ul>
+			<li>The Monster is not spawned. If it has a “when spawned” effect, do
+				not resolve that effect.</li>
+<li>After resolving the Combat Encounter, the Monster is discarded
+	even if it was not defeated, and the investigator continues
+		resolving the effect that caused the ambush.</li>
+<li>If a <strong>specific</strong> Monster ambushes an investigator, do not draw a
+Monster token. Instead, reference the Monster’s attributes from a
+token that has been set aside or is on the game board.</li>
+<li>If a <a href="#cultist">Cultist</a> Monster ambushes an investigator, do not draw a
+Monster token. Instead, reference the Cultist information on the
+Ancient One sheet.</li>
+<li>Unlike a normal Combat Encounter, if an investigator is
+ambushed by a Monster and he defeats that Monster, he cannot
+resolve an additional encounter.</li>
+		</ul>
+
+		<p>Related Topics:  Set Aside</p>
 
 		<h2 id="rumors">Rumors</h2>
 		<p><span class="trait">Rumor</span> Mythos cards often place Rumor
@@ -782,7 +908,8 @@
 		left corner of the sheet. This sheet remains facedown for the rest
 		of the game, and its effects replace those found on the front of the
 		sheet (including Cultist information). The back of the Ancient
-		One sheet also describes how the investigators can lose the game.</p>
+		One sheet describes how the investigators can lose the game and describes the <a href="#final-mystery">Final Mystery</a> which the investigators must complete in
+	addition to the other <a href="#mysteries">Mysteries</a>.</p>
 		<h3 id="eliminated-players">Eliminated Players</h3>
 		<p>After the Ancient One has awakened, when an investigator is
 		defeated or devoured, the player controlling that investigator is
