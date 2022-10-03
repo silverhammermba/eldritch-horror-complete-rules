@@ -63,9 +63,39 @@ playing with expansions.</p>
 		<h2 id="setup">Setup</h2>
 
 		<p>Before playing each game, perform the following steps in order.</p>
+
+		<h3 id="determine-prelude">0. Determine Prelude</h3>
+
+		<p class="mom">Draw one random Prelude card before setting up the game. These cards
+		alter game setup and make each game feel unique. The card’s effect is
+		resolved immediately after drawing the card, unless it specifies
+		different timing, such as “after resolving setup.”</p>
+
+
 		<h3 id="place-game-board">1. Place Game Board</h3>
 		<p>Unfold the game board and place it in the center of the play
 		area within easy reach of all players.</p>
+
+		<h4 id="side-board-setup">1.5 Side Board Setup</h4>
+
+		<p class="mom">Side boards are only set up when specifically mentioned
+		by game components such as the Ancient One sheet or Prelude card.</p>
+
+		<ol>
+			<li><strong>Place side board:</strong>
+				Unfold the side board and place it near the main board within
+				reach of all players.</li>
+			<li><strong>Add clues and gates:</strong>
+				Add the Clues and Gates that correspond to spaces
+				on the side board when constructing the Clue pool and Gate stack, respectively,
+				and randomize the Clue pool and Gate stack.</li>
+			<li><strong>Set aside monsters:</strong>
+				<a href="#set-aside">Set aside</a> Monsters from the Monster cup as indicated on the side board.</li>
+			<li><strong>Separate and place decks:</strong>
+				Separate all Encounter cards related to the side board into decks and shuffle each
+				deck. Place these decks near the side board.</li>
+		</ol>
+
 		<h3 id="organize-tokens">2. Organize Tokens</h3>
 		<p>Organize the following tokens as listed below:</p>
 		<ol>
@@ -99,8 +129,9 @@ effect. The space indicated on the front of the Clue token is not
 referenced.</li>
 			</ul></li>
 			<li>Create the general token pool by taking all Health, Sanity,
-				Improvement, Travel Ticket, Eldritch, Mystery, and Rumor
-				tokens and place them in piles within reach of all players. These tokens are always
+				Improvement, Travel Ticket, Eldritch, Mystery, Rumor, and <span
+					class="mom">Focus</span> tokens and place them in piles
+				within reach of all players. These tokens are always
 available. If the general token pool has no remaining tokens of any one type,
 track those tokens on paper or with a small object such as a coin.
 			<ul>
@@ -197,7 +228,7 @@ or Final Mystery they correspond to.</p>
 		<ul>
 			<li id="expedition-deck">Shuffle all <a href="#complex-encounters">Expedition</a> Encounter cards into a single deck,
 				regardless of card back.</li>
-			<li>Shuffle the Spell cards and Condition cards into two
+			<li>Shuffle the Spell cards, Condition cards, and <span class="mom"><a href="#unique-assets">Unique Asset</a> cards</span> into
 				separate decks. Place these decks faceup, with the top
 				card’s name and artwork visible.</li>
 			<li>Set the Mythos cards aside for step 8. Then separate all
@@ -372,6 +403,7 @@ with a Trade action, and then continue moving.</li>
 			<li><a href="#trade-action">Trade</a></li>
 			<li><a href="#prepare-for-travel-action">Prepare for Travel</a></li>
 			<li><a href="#acquire-assets-action">Acquire Assets</a></li>
+			<li class="mom"><a href="#focus-action">Focus</a></li>
 			<li><a href="#component-actions">Component Actions</a></li>
 		</ul>
 
@@ -397,6 +429,18 @@ token or Ship Ticket token spent, respectively.
 			<p>Each space is connected to at least one other space by
 			lines known as <span class="def">paths</span>. Two spaces are adjacent if they are connected by a single unbroken path.</p>
 			<p>Train and Ship paths each correspond to a type of travel ticket.</p>
+
+			<h3 id="local-paths">Local Paths</h3>
+
+			<p class="mom">When playing with a side board, Local paths connect some spaces with dashed green lines.</p>
+
+			<p>During the Action Phase, an investigator can move along connected local paths (TODO).</p>
+			<ul>
+			<li>Each investigator may perform this movement only
+				once per round.</li>
+<li>This movement does not require an action but cannot
+be performed by a Delayed investigator.</li>
+			</ul>
 		</section>
 
 		<h3 id="rest-action">Rest Action</h3>
@@ -454,6 +498,12 @@ result.</li>
 
 		<p>Related Topics: <a href="#gaining-possessions-and-conditions">Gaining Possessions and Conditions</a></p>
 
+		<h3 id="focus-action">Focus Action</h3>
+
+		<p class="mom">As an action, an investigator on any space
+		gains one Focus token. An investigator cannot have more than two Focus
+		tokens. Focus tokens can be spent when resolving a <a href="#tests">test</a>.</p>
+
 		<h3 id="component-actions">Component Actions</h3>
 		<p>The investigator may perform an action listed on one of his
 		components (such as Investigator sheets, Conditions, and <a href="#possessions">possessions</a>). These
@@ -482,6 +532,9 @@ owner cannot use the component action that round.</p>
 				actions are preceded by the phrase “Local Action” in bold. An investigator may perform local actions on his own possessions
 and Conditions. Multiple investigators may perform the same local action during the
 course of a single Action Phase.</li>
+			<li class="mom">A space’s “Local Action” ability can be performed only by
+investigators on that space. Each investigator may perform the
+“Local Action” ability of each space only once per round.</li>
 		</ul>
 
 
@@ -565,6 +618,14 @@ space’s name.</li>
 or Tokyo may encounter that space by drawing an Asia/Australia
 Encounter card and resolving the effect that corresponds to his
 space’s name.</li>
+<li class="mom">During the Encounter Phase, an investigator on Miskatonic
+Outpost, Lake Camp, or Frozen Waste may encounter that
+space by drawing an Outpost Encounter and resolving the
+effect that corresponds to his space.</li>
+<li class="mom">During the Encounter Phase, an investigator on Snowy
+Mountains, City of the Elder Things, or Plateau of Leng may
+encounter that space by drawing a Mountain Encounter and
+resolving the effect that corresponds to his space.</li>
 		</ul>
 		<h3 id="token-encounters">Token Encounters</h3>
 		<p>Some tokens are placed on spaces of the game board and provide
@@ -579,6 +640,12 @@ Clue being encountered.</li>
 					remains on its space and can be encountered again.</li>
 				<li>When a Research Encounter says, “additional Clue,” it is referring
 					to Clues in the Clue pool.</li>
+				<li class="mom">When an investigator encounters a Clue on the Antarctica side
+board, he does not resolve a Research Encounter for the chosen
+Ancient One. Instead, he draws and resolves an Antarctica
+Research Encounter.
+An Antarctica Research Encounter is considered a Research
+Encounter for all game effects.</li>
 			</ul></li>
 			<li id="other-world-encounters">Gate tokens allow investigators to draw and resolve Other
 				World Encounter cards.
@@ -806,6 +873,7 @@ may list a “When this Monster is spawned,” or @ effect.</li>
 						available, he rolls as many dice as possible, counts his successes,
 						and rolls the dice again until he has rolled a number of dice
 						equal to his dice pool.</li>
+					<li>Immediately after rolling, some game effects may allow the investigator to <a href="#rerolling-dice">reroll</a> some dice.</li>
 				</ul>
 				<li><strong>Determine Result:</strong> Each “5” or “6” rolled is one <span class="def">success</span>. The
 					total number of successes rolled is the <span class="def">test result</span>. If he rolls
@@ -846,11 +914,11 @@ may list a “When this Monster is spawned,” or @ effect.</li>
 
 		<h3 id="rerolling-dice">Rerolling Dice</h3>
 		<p>Immediately after rolling dice during a test, an investigator
-		may spend a Clue token to reroll one die.</p>
+		may spend a Clue token or a <span class="mom">Focus token</span> to reroll one die.</p>
 		<p>If multiple effects allow an investigator to reroll a die, he may
 resolve each effect separately. There is no limit to the number of
 times a die or test can be rerolled, so long as the investigator has
-the means to do so. There is no limit to the number of Clues he can spend
+the means to do so. There is no limit to the number of Clues or <span class="mom">Focus</span> he can spend
 to reroll dice.</p>
 		<p>When a die is rerolled, use the result of the reroll, even if the new
 		result is worse. He determines whether he passed or failed after resolving all rerolls.</p>
@@ -892,7 +960,7 @@ rolls, such as the @ effect of a Blessed Condition card.</p>
 
 		<h3 id="complex-encounters">Complex Encounters</h3>
 		<p>Expedition Encounters, Other World Encounters, and Special
-		Encounters are rewarding but dangerous adventures called
+		Encounters are rewarding but dangerous experiences called
 		complex encounters. Each of these cards has three effects. To
 		resolve these encounters, an investigator first resolves the <span class="def">initial
 			effect</span> (the top box of the card). Depending upon the result of
@@ -993,7 +1061,7 @@ discard pile.</li>
 
 		<ul>
 			<li>An investigator’s possessions include his Clue tokens, travel ticket
-				tokens, Asset cards, Artifact cards, and <a href="#spells">Spell</a> cards.</li>
+				tokens, Asset cards, Artifact cards, <a href="#spells">Spell</a> cards, and <span class="#mom">Unique Asset</span> cards.</li>
 			<li>If an effect does not list a limit, it may be used only once per
 instance of the triggered event. For example, if an Asset allows an
 investigator to recover 1 additional Health when he performs a
@@ -1084,6 +1152,18 @@ copy of, he does not gain another copy of that Condition.</li>
 			<li>An investigator that has a Lost in Time and Space
 				Condition loses the game if investigators lose the game, and
 				he wins the game if investigators win the game.</li>
+		</ul>
+
+		<h3 id="unique-assets">Unique Assets</h3>
+
+		<p>Unique Assets are <a href="#double-sided-cards">double-sided cards</a>. An investigator cannot look at
+		the back of Unique Assets unless an effect allows him to. There is no limit to the number of Unique
+		Assets an investigator can have.</p>
+		<ul>
+			<li>“Asset” refers to both Assets and Unique Assets. “Non-Unique
+				Asset” refers to Assets but not Unique Assets.</li>
+			<li>When a Unique Asset is discarded, also discard all
+				tokens on it.</li>
 		</ul>
 
 		<h2 id="discarding">Discarding</h2>
@@ -1255,6 +1335,7 @@ there are none available, he is <a href="#eliminated-players">eliminated</a>.</p
 					Health simultaneously.</li>
 			</ul></li>
 		</ol>
+
 		<ul>
 			<li class="fl">Some Monsters require the player to test
 skills other than { and }. If a Monster has another skill icon in place of either the {
@@ -1270,6 +1351,23 @@ place of the skill it replaced.</li>
 		<li>If the investigator did not defeat the Monster, it remains on his
 		space along with any Health tokens on it.</li>
 		</ul>
+
+		<h3 id="magical-resistance">Magical Resistance</h3>
+
+		<p class="mom">When resolving a Combat
+		Encounter against a Monster with the Magical Resistance
+		ability, an investigator cannot apply any bonus to his die
+		pool from <span class="trait">Magical</span> possessions or Spells.
+		Effects that allow the investigator to reroll dice or manipulate
+		dice results can be used as normal.
+
+		<h3 id="physical-resistance">Physical Resistance</h3>
+		<p class="mom">When resolving a Combat
+		Encounter against a Monster with the Physical Resistance
+		ability, an investigator cannot apply any bonus to his die
+		pool except from <span class="trait">Magical</span> possessions and Spells.
+		Effects that allow the investigator to reroll dice or manipulate
+		dice results can be used as normal.
 
 		<section class="example">
 			<h3 id="combat-example">Combat Example</h3>
@@ -1348,6 +1446,22 @@ resolve an additional encounter.</li>
 			specified token, that space or token is the nearest.</li>
 		</ul>
 
+		<h2 id="adventures">Adventures</h2>
+
+		<p>Adventures are used only if specifically mentioned by another game
+		componet such as the Ancient One sheet or Prelude card.</p>
+
+		<p>When an Adventure is drawn, the active investigator places
+it faceup in play and resolves that card’s “when this card
+enters play” effect.</p>
+		<p>Each Adventure has an effect that allows investigators to
+complete the Adventure. When an Adventure is completed,
+the active investigator resolves that card’s “when this Adventure
+is completed” effect, which often includes drawing another
+Adventure representing the next chapter of the story. Then the
+active investigator discards the Adventure, any tokens on it, and
+any tokens placed by its effects.</p>
+
 		<h2 id="rumors">Rumors</h2>
 		<p><span class="trait">Rumor</span> Mythos cards often place Rumor
 		tokens on specific spaces of the game board.
@@ -1390,6 +1504,30 @@ it <strong>on top of</strong> any solved Mysteries.</p>
 
 		<p>If a solved Mystery is shuffled into the deck or returned to the
 game box, that Mystery no longer counts as a solved Mystery.</p>
+
+		<h3 id="advancing-the-active-mystery">Advancing the Active Mystery</h3>
+
+		<p>Some game effects “advance the active
+		Mystery.” Due to the complexity of Mysteries, this can result in
+		a number of different effects. When investigators are instructed
+		to advance the active Mystery, the active investigator resolves
+		one of the following effects that applies:</p>
+		<ul>
+			<li>If the active Mystery requires one or more tokens to be placed
+				on the card, place one token of that type on the card.</li>
+			<ul>
+				<li>Clues, Gates, and Monsters placed on the active Mystery
+					in this way are drawn from the Clue pool, Gate stack, and
+					Monster cup, respectively.</li>
+			</ul></li>
+			<li>If the active Mystery requires an Epic Monster to be defeated,
+				place two Health on the card. The Epic Monster’s toughness
+				is reduced by one for each Health on the active Mystery.</li>
+			<li>If the active Mystery requires an investigator to spend one
+				or more Clues, place one Clue from the Clue pool on the
+				card. Any investigator may spend Clues placed on the active
+				Mystery when resolving an effect of that card.</li>
+		</ul>
 
 		<h2 id="the-ancient-one-awakens">The Ancient One Awakens</h2>
 		<p>When the Doom token reaches the “0” space of the Doom
@@ -1515,6 +1653,67 @@ Condition (or a Detained Condition) “cannot move.” This
 means he cannot move on his own nor be moved by any other
 effect, including the Plumb the Void Spell.</p>
 
+<p class="q mom">What space type are spaces on the Antarctica side board?</p>
+<p class="a">The spaces on the Antarctica side board do not have a
+space type. When an investigator encounters a Clue on the
+Antarctica side board, he draws and resolves an Antarctica
+Research Encounter.</p>
+<p class="q mom">Are two spaces connected by a Local path adjacent?</p>
+<p class="a">Yes. Two spaces connected by a Local path are adjacent.</p>
+<p class="q mom">How does the Blunderbuss Asset’s effect work?</p>
+<p class="a">Similar to the Double-barreled Shotgun, an investigator
+with the Blunderbuss gets two successes for each 6 he rolls
+when resolving a } test during a Combat Encounter.
+However, for each 1 he rolls during that test he negates one
+success. This means that when calculating his total successes,
+he subtracts one from the test result for each 1 he rolled to a
+minimum of zero successes.</p>
+
+<p class="q mom">Can an investigator have multiple copies of the same
+Unique Asset?</p>
+<p class="a">Yes. There is no limit to the number of Unique Assets an
+investigator can have.</p>
+<p class="q mom">Can an investigator gain a random Unique Asset when told to
+gain a random Asset?</p>
+<p class="a">No. If an effect says, “gain 1 random Asset from the deck,”
+the investigator gains the Asset from the Asset deck, not the
+Unique Asset deck. An investigator gains a Unique Asset only
+if the effect specifically calls for a Unique Asset.</p>
+<p class="q mom">Can investigators trade Task Assets?</p>
+<p class="a">Yes. Task Assets, like other Assets, may be traded using the
+Trade action. If a Task Asset has one or more tokens on it,
+those tokens remain on the card when traded.</p>
+<p class="q mom">What happens if an investigator gains a Courier Run Unique
+Asset and there are no Clues in the Clue pool that correspond to
+City spaces?</p>
+<p class="a">The investigator should discard the Clue on the nearest
+City space containing a Clue, placing that Clue faceup on his
+Courier Run Unique Asset.</p>
+<p class="q mom">Can an investigator benefit from both the Storm of Spirits Spell
+and a Weapon Asset?</p>
+<p class="a">No. The Storm of Spirits Spell allows an investigator to
+resolve a [ test in place of the } test during a Combat
+Encounter. If he does, bonuses to his } do not apply to
+the [ test. However, bonuses to the investigator’s [ apply
+to the test.</p>
+<p class="q mom">When can an investigator discard a Debt Condition with a
+Funding Condition?</p>
+<p class="a">If an investigator would gain a Debt Condition and he
+already has a Funding Condition, he may discard the Funding
+Condition instead of gaining the Debt Condition.</p>
+<p>If an investigator has both a Debt Condition and a Funding
+Condition, he may discard both cards at any time.</p>
+<p class="q mom">Does an investigator recover additional Health from effects,
+such as the Provisions Unique Asset, if he has a Hypothermia or
+Infection Condition?</p>
+<p class="a">No. An investigator with a Hypothermia or Infection
+Condition does not recover Health from a Rest action nor
+does he recover additional Health from other effects during
+a Rest action.</p>
+<p>However, effects that cause an investigator to recover Health
+without performing a Rest action, such as the Private Care
+Asset, affect that investigator as normal.</p>
+
 <h2 id="investigator-abilities">Investigator Abilities</h2>
 
 <h3 id="akachi-onyele">Akachi Onyele</h3>
@@ -1553,6 +1752,22 @@ effect, including the Plumb the Void Spell.</p>
 		Encounter, she does not lose any Sanity as long as she rolls
 		1 success. If she fails the { test, she loses 1 Sanity from the
 		Monster’s altered horror.</li>
+</ul>
+<h3 id="finn-edwards">Finn Edwards</h3>
+<p class="mom">When Finn Edwards uses his active ability, he chooses
+himself, another investigator on his space, or both himself and
+another investigator on his space.</p>
+<ul>
+<li>If Finn chooses only himself, he moves to an adjacent space
+connected by a Ship or Train path.</li>
+<li>If Finn chooses only another investigator on his space, that
+investigator may move to an adjacent space connected by a
+Ship or Train path.</li>
+<li>If Finn chooses both himself and another investigator on his
+space, Finn moves to an adjacent space connected by a Ship or
+Train path, and the chosen investigator may choose to move
+to that space as well. Finn and the chosen investigator cannot
+move to separate spaces.</li>
 </ul>
 <h3 id="jacqueline-fine">Jacqueline Fine</h3>
 <ul>
@@ -1639,6 +1854,17 @@ effect, including the Plumb the Void Spell.</p>
 		dice instead. If that investigator’s dice pool is only
 		one die, Trish cannot use her passive ability.</li>
 </ul>
+<h3 id="ursula-downs">Ursula Downs</h3>
+<p class="mom">Once per round, Ursula may choose to spend one fewer
+Focus when paying for an effect, including spending a Focus to
+reroll a die when resolving a test. This can reduce the cost of an
+effect to zero Focus.</p>
+<h3 id="wilson-richards">Wilson Richards</h3>
+<p class="mom">Wilson Richards’s passive ability does not allow him to reroll a single
+die twice.</p>
+<p>If Wilson or another investigator on Wilson’s space
+spends a Focus to reroll a die and his dice pool is only one die,
+that investigator cannot use Wilson’s passive ability.</p>
 
 <h2 id="optional-rules">Optional Rules</h2>
 
@@ -1667,6 +1893,26 @@ with one starting <span class="trait">Rumor</span> Mythos card. After setup, dra
 any “When this card enters play,” effects, as well as the Place Rumor
 Token icon (if it appears on the card). Do not spawn Clues from the
 Rumor’s Spawn Clues icon.</p>
+
+<h4 id="staged-difficulty">Staged Difficulty</h4>
+<p>Players can make the game’s difficulty increase in stages by
+building stage I of the Mythos deck using only easy Mythos
+cards, building stage II of the Mythos deck using only normal
+Mythos cards, and building stage III of the Mythos deck using
+only hard Mythos cards.</p>
+<ul><li>
+To increase the difficulty of this optional rule, players can
+use normal blue Mythos cards when building stage I of the
+Mythos deck and hard blue Mythos cards when building
+stage II of the Mythos deck. Players may also start with
+an easy blue Mythos card in play following the <a href="#starting-rumor">Starting
+	Rumor</a> rule.</li></ul>
+
+<h4 id="control-your-fate">Control Your Fate</h4>
+<p class="mom">Instead of drawing a random Prelude card before setup,
+players as a group may choose one Prelude card, following
+the card’s effects as normal.</p>
+<p>Alternatively, players may choose to not use a Prelude card.</p>
 
 <h3 id="scoring">Scoring</h3>
 <p>If investigators win the game, they can determine how well they did
