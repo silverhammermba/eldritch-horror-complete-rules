@@ -64,13 +64,24 @@ playing with expansions.</p>
 
 		<p>Before playing each game, perform the following steps in order.</p>
 
-		<h3 id="determine-prelude">0. Determine Prelude</h3>
+		<h3 id="personal-stories">0. Personal Stories</h3>
+		<p class="mon">Personal stories represent
+		the continuing stories your investigator faces as the game
+		progresses. Personal stories can be used during any game.</p>
+		<p>Players decide if they would like to
+		play with personal stories or not. Either all players play with
+		personal stories or all players play without.</p>
+
+		<h3 id="determine-prelude">0.5. Determine Prelude</h3>
 
 		<p class="mom">Draw one random Prelude card before setting up the game. These cards
 		alter game setup and make each game feel unique. The card’s effect is
 		resolved immediately after drawing the card, unless it specifies
 		different timing, such as “after resolving setup.”</p>
 
+		<p>Some expansions include duplicate Preludes which originally appeared
+		in previous expansions. If playing with those expansions, do not
+		include the duplicate Preludes in the Prelude deck.</p>
 
 		<h3 id="place-game-board">1. Place Game Board</h3>
 		<p>Unfold the game board and place it in the center of the play
@@ -136,16 +147,21 @@ effect. The space indicated on the front of the Clue token is not
 referenced.</li>
 			</ul></li>
 			<li>Create the general token pool by taking all Health, Sanity,
-				Improvement, Impairment, Travel Ticket, Eldritch, Mystery, Rumor, Adventure, <span class="cir">Devastation</span>, and <span
-					class="mom">Focus</span> tokens and place them in piles
+				Improvement, Impairment, Travel Ticket, Eldritch, Mystery, Rumor, Adventure, <span class="cir">Devastation</span>, <span class="mom">Focus</span>, and <span class="mon">Resource</span> tokens and place them in piles
 				within reach of all players. These tokens are always
-available. If the general token pool has no remaining tokens of any one type,
-track those tokens on paper or with a small object such as a coin.
+				available. If the general token pool has no remaining tokens of any one type,
+				track those tokens on paper or with a small object such as a coin.
 			<ul>
 				<li>Eldritch tokens are a generic resource used by many effects,
 					including the Ancient One.</li>
 				<li>A component that places an Eldritch token on the game board
 					describes how investigators interact with that token.</li>
+				<li class="mon">Some effects (notably the Corruption
+Condition) cause you to gain Eldritch tokens. Eldritch tokens
+you have gained represent your current level of corruption.
+When you gain an Eldritch token, place that token on your
+Investigator sheet. Some effects allow you to spend or discard
+your Eldritch tokens.</li>
 			</ul></li>
 		</ol>
 		<h3 id="choose-and-place-investigators">3. Choose and Place Investigators</h3>
@@ -178,6 +194,28 @@ possessions, Conditions, and effects.</p>
 		Then he takes a number of <a href="#health-and-sanity">Health and Sanity</a> tokens equal to
 		his investigator’s maximum Health and Sanity listed on the
 		front of his Investigator sheet. He places these tokens near his Investigator sheet.</p>
+
+		<p class="mon">If playing with personal stories, each investigator also receives the
+		Personal Mission card that corresponds
+		to their chosen investigator, placing it
+		near their Investigator sheet with their
+		possessions.</p>
+		<p>Your Personal Mission includes
+		additional narrative text as well as an
+		effect that causes you to gain your
+		Reward or Consequence.</p>
+		<p>When you gain your Reward or Consequence,
+		place it near your Investigator sheet
+		with your possessions. You can gain your
+		Reward or Consequence, but not both.
+		Once you gain your Reward or
+		Consequence, you keep it until the end
+		of the game. Personal Missions, Rewards,
+		and Consequences cannot be discarded
+		by other game effects.</p>
+		<p>Although Reward/Consequence cards act similarly to Assets
+		or Conditions, they are not possessions or Conditions and
+		are not affected by effects that affect other card types.</p>
 
 		<h3 id="determine-ancient-one">5. Determine Ancient One</h3>
 		<p>As a group, players choose one of the Ancient One sheets. Each
@@ -420,6 +458,7 @@ with a Trade action, and then continue moving.</li>
 			<li><a href="#prepare-for-travel-action">Prepare for Travel</a></li>
 			<li><a href="#acquire-assets-action">Acquire Assets</a></li>
 			<li class="mom"><a href="#focus-action">Focus</a></li>
+			<li class="mon"><a href="#gather-resources-action">Gather Resources Action</a></li>
 			<li><a href="#component-actions">Component Actions</a></li>
 		</ul>
 
@@ -462,7 +501,9 @@ be performed by a Delayed investigator.</li>
 		</section>
 
 		<h3 id="rest-action">Rest Action</h3>
-		<p>The investigator recovers 1 <a href="#health-and-sanity">Health</a> and 1 <a href="#health-and-sanity">Sanity</a>.</p>
+		<p>The investigator recovers 1 <a href="#health-and-sanity">Health</a> and 1 <a href="#health-and-sanity">Sanity</a>. <span class="mon">Then he may spend any number of
+		<a href="#gather-resources-action">Resources</a> to recover 1 additional Health or 1 additional
+		Sanity for each Resource spent.</span></p>
 		<p>An investigator <strong>cannot</strong> perform this action if there is a Monster
 		on his space.</p>
 
@@ -491,9 +532,11 @@ discard one travel ticket before gaining the new travel ticket.</p>
 
 		<h3 id="acquire-assets-action">Acquire Assets Action</h3>
 
-		<p>As an action, an investigator <strong>on a City space</strong> <a href="#tests">tests</a> ]. Then he may
+		<p>As an action, an investigator <strong>on a City space</strong> <a href="#tests">tests</a> ]. <span class="mon">Then he may spend any
+			number of <a href="#gather-resources-action">Resources</a> to add 1 success to his test result
+			for each Resource spent.</span> Then he may
 		gain any number of cards from the <a href="#reserve">reserve</a> with total <span class="def">value</span> (the number in the upper-left corner) equal to or
-less than the test result.
+		less than the test result.
 <ul>
 	<li>If he is unable or chooses not to gain any cards from the reserve, he
 		may instead discard one card of his choice from the reserve.</li>
@@ -521,6 +564,13 @@ result.</li>
 		<p class="mom">As an action, an investigator on any space
 		gains one Focus token. An investigator cannot have more than two Focus
 		tokens. Focus tokens can be spent when resolving a <a href="#tests">test</a>.</p>
+
+		<h3 id="gather-resources-action">Gather Resources Action</h3>
+		<p class="mon">As an action, an investigator on any space gains one <a href="#possessions">Resource token</a>.</p>
+		<ul>
+			<li>Resources can be spent as part of the <a href="#rest-action">Rest</a> and <a href="#acquire-assets-action">Acquire Assets</a> actions.</li>
+			<li>You cannot have more than two Resources.</li>
+		</ul>
 
 		<h3 id="component-actions">Component Actions</h3>
 		<p>The investigator may perform an action listed on one of his
@@ -1231,7 +1281,7 @@ discard pile.</li>
 
 		<ul>
 			<li>An investigator’s possessions include his Clue tokens, travel ticket
-				tokens, Asset cards, Artifact cards, <a href="#spells">Spell</a> cards, and <span class="#mom">Unique Asset</span> cards.</li>
+				tokens, <a href="#gather-resources-action">Resource</a> tokens, Asset cards, Artifact cards, <a href="#spells">Spell</a> cards, and <span class="#mom">Unique Asset</span> cards.</li>
 			<li>If an effect does not list a limit, it may be used only once per
 instance of the triggered event. For example, if an Asset allows an
 investigator to recover 1 additional Health when he performs a
@@ -1717,6 +1767,9 @@ Mystery is reduced by one for each Health on the card.</li></ul></li>
 				or more Clues, place one Clue from the Clue pool on the
 				card. Any investigator may spend Clues placed on the active
 				Mystery when resolving an effect of that card.</li>
+			<li class="mon">If the active Mystery instructed you to set aside Adventure
+cards, treat the current Adventure as the active Mystery for
+purposes of advancing the active Mystery.</li>
 		</ul>
 
 		<h2 id="the-ancient-one-awakens">The Ancient One Awakens</h2>
@@ -2007,6 +2060,20 @@ that is both a City space and a named space. As such, a
 devastated space is not a named City space because it is
 no longer a City space.</p>
 
+<p class="q mon">Does reducing my maximum Health reduce my current Health?</p>
+<p class="a mon">No. If your maximum Health is changed, your current
+Health remains the same. However, your current Health cannot
+exceed your new maximum Health. In such a case, your
+current Health is set to your new maximum Health.
+The same is true for current and maximum Sanity.</p>
+<p class="q mon">Are the Eldritch tokens gained from a Corruption Condition
+discarded when I discard the Condition?</p>
+<p class="a mon">No. The Corruption Condition (and some other effects)
+cause you to gain Eldritch tokens which are placed on your
+Investigator sheet. Eldritch tokens you have gained are not
+discarded unless an effect specifically allows you to spend
+or discard them.</p>
+
 <h2 id="investigator-abilities">Investigator Abilities</h2>
 
 <h3 id="akachi-onyele">Akachi Onyele</h3>
@@ -2098,6 +2165,11 @@ own.</p>
 		<p>Jacqueline cannot use her passive ability when an investigator gains
 		a Condition with the <span class="trait">Common</span> trait (such as a Debt). She cannot
 		use this ability when she gains a Condition herself.</p></li>
+	<li class="mon">If Jacqueline has her Reward
+card (“Oracle”), during the Mythos Phase, after the Mythos card is revealed,
+Jacqueline may spend three Clues. If she does, the Mythos card
+is resolved as if its text box is blank. She must choose to do this
+before any part of the text effect is resolved.</li>
 </ul>
 <h3 id="jenny-barnes">Jenny Barnes</h3>
 <p class="soc">Jenny can use her action ability to allow herself
@@ -2171,6 +2243,15 @@ passive ability could allow her to gain an additional Clue.
 This Clue is gained from her passive ability, not from
 the Research Encounter.</p>
 
+<h3 id="marie-lambeau">Marie Lambeau</h3>
+<p class="mon">If Marie has gained her Reward card (“Smokey Velvet”) and performs an action, her Reward effect
+does not allow an investigator to also perform that action if
+that investigator has already performed that action this round.
+However, after performing her action ability (which allows her
+to perform an action she has already performed this round),
+her Reward effect can allow another investigator to perform
+an action the investigator has already performed.</p>
+
 <h3 id="mark-harrigan">Mark Harrigan</h3>
 <ul>
 	<li>If Mark’s action ability causes a Monster to lose its
@@ -2209,10 +2290,20 @@ appropriate path and even if she is not on a City space.</p>
 		ability to reroll a die during a test or to pay for his
 		action ability.</li>
 </ul>
+<h3 id="preston-fairmont">Preston Fairmont</h3>
+<p class="mon">The actions granted by Preston’s action ability can
+be performed in any order, including allowing the other
+investigator to perform actions before or after Preston.</p>
 <h3 id="rex-murphy">Rex Murphy</h3>
 <p class="utp">If at any time, Rex does not have a Cursed
 Condition, he immediately gains one Clue and improves one
 skill of his choice and then gains a Cursed Condition.</p>
+<h3 id="sefina-rousseau">Sefina Rousseau</h3>
+<p class="mon">The two successes required for Sefina’s passive ability to
+trigger must be rolled on the dice during her test. Successes granted by another effect (such as accepting a bank
+loan) do not count toward the requirement. However, Sefina
+may use any rerolls or other dice manipulation effects to
+achieve her two successes.</p>
 <h3 id="silas-marsh">Silas Marsh</h3>
 <ul>
 	<li>Silas cannot spend travel tickets to move additional
@@ -2246,6 +2337,86 @@ die twice.</p>
 <p>If Wilson or another investigator on Wilson’s space
 spends a Focus to reroll a die and his dice pool is only one die,
 that investigator cannot use Wilson’s passive ability.</p>
+
+<h2 id="campaign-mode">Campaign Mode</h2>
+<p>This expansion features a new mode of play to challenge experienced players. With the campaign mode, players will embark
+upon a series of six sequential games. Over the course of these games, major events within each game will create lasting effects
+that linger until the end of the campaign.</p>
+<p>The goal is <strong>win all six games</strong> of the campaign. If the investigators lose any single game, the world has ended
+and the <strong>investigators lose the campaign</strong>.</p>
+
+<h3 id="campaign-setup">Campaign Setup</h3>
+<p>Each game of a campaign is set up in the same way as a normal
+game except as stated here:</p>
+<ul>
+	<li>You must use <a href="#personal-stories">personal stories</a>.</li>
+	<li>The Ancient One for the first game is selected at random.
+Also randomly determine a second Ancient One that will
+be played against in the next game of the campaign.</li>
+<li>The game is played using two Preludes: one that
+corresponds to the current Ancient One and a second
+for the Ancient One that will be played against next
+game. Each Ancient One is listed below with its
+corresponding Prelude.</li>
+</ul>
+
+<table>
+	<tr><th>Ancient One</th><th>Prelude</th></tr>
+	<tr><td>Abhoth</td><td>Epidemic</td></tr>
+	<tr><td>Antediluvium</td><td>The Stars Align</td></tr>
+	<tr><td>Atlach-Nacha</td><td>Web Between Worlds</td></tr>
+	<tr><td>Azathoth</td><td>Beginning of the End</td></tr>
+	<tr><td>Cthulhu</td><td>Call of Cthulhu</td></tr>
+	<tr><td>Hastur</td><td>The King in Yellow</td></tr>
+	<tr><td>Hypnos</td><td>Otherworldly Dreams</td></tr>
+	<tr><td>Ithaqua</td><td>Rumors from the North</td></tr>
+	<tr><td>Nephren-Ka</td><td>Under the Pyramids</td></tr>
+	<tr><td>Nyarlathotep</td><td>Harbinger of the Outer Gods</td></tr>
+	<tr><td>Rise of the Elder Things</td><td>Doomsayer from Antarctica</td></tr>
+	<tr><td>Shub-Niggurath</td><td>Twin Blasphemies of the Black Goat</td></tr>
+	<tr><td>Shudde M’ell</td><td>Apocalypse Nigh</td></tr>
+	<tr><td>Syzygy</td><td>In Cosmic Alignment</td></tr>
+	<tr><td>Yig</td><td>Father of Serpents</td></tr>
+	<tr><td>Yog-Sothoth</td><td>The Dunwich Horror</td></tr>
+</table>
+
+<h3 id="subsequent-games">Subsequent Games</h3>
+<p>Subsequent games of the campaign are set up in the same
+manner as the first. However, the following rules and
+additional steps of setup must be followed:
+<ul>
+	<li>The Ancient One for each subsequent game was determined
+during setup of the previous game. The Ancient One for the
+next game must be determined at random during setup to
+inform which two Preludes will be used in the game.
+<ul>
+<li>For the sixth and final game, instead of determining
+a second Ancient One, play using the Prelude for the
+current Ancient One and the Unto the Breach Prelude.</li>
+</ul></li>
+<li>Once an Ancient One has been defeated, that Ancient One
+	cannot be selected again during the same campaign.</li>
+<li>Investigators that have been defeated or devoured in a
+previous game are permanently eliminated and cannot be
+chosen when selecting an investigator.</li>
+<li>The surviving investigators from the previous game are the
+chosen investigators to begin the new game. Players who
+were eliminated at the end of the previous game may select
+new investigators from the remaining pool.</li>
+<li>If you gained your Reward or Consequence from your
+	personal story, you begin the new game with that card.</li>
+<li>If you ended the previous game with a Dark Pact Condition
+or a Promise of Power Condition, you begin the new game
+with a copy of that Condition.</li>
+<li>All cities that had been <a href="#devastation-encounters">devastated</a> during previous games
+begin devastated in the new game.</li>
+</ul>
+<p>All other components and effects are reset between games.
+Undefeated investigators do not retain the possessions or skill
+improvements they accrued during previous games; defeated
+investigators and their possessions are returned to their
+respective decks and pools; gates and monsters do not remain
+on the game board; etc.</p>
 
 <h2 id="optional-rules">Optional Rules</h2>
 
