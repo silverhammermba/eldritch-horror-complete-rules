@@ -31,6 +31,18 @@ li p {
 	margin-top: 0;
 }
 
+table {
+	border-collapse: collapse;
+}
+
+tr {
+	border-bottom: 1px solid;
+}
+
+th, td {
+	padding: 0 10px;
+}
+
 .campaign-preludes li {
   display: flex;
 }
