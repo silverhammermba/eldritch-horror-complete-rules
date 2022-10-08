@@ -94,6 +94,9 @@ playing with expansions.</p>
 			<li><strong>Separate and place decks:</strong>
 				Separate all Encounter cards related to the side board into decks and shuffle each
 				deck. Place these decks near the side board.</li>
+			<li class="td"><strong>Spawn Dream Portals:</strong>
+				When setting up the Dreamlands side board, <a href="#dream-portals">spawn all three Dream Portals</a>.
+			</li>
 		</ol>
 
 		<p>While side boards are in play, “game board” refers to both
@@ -133,7 +136,7 @@ effect. The space indicated on the front of the Clue token is not
 referenced.</li>
 			</ul></li>
 			<li>Create the general token pool by taking all Health, Sanity,
-				Improvement, Impairment, Travel Ticket, Eldritch, Mystery, Rumor, Adventure, and <span
+				Improvement, Impairment, Travel Ticket, Eldritch, Mystery, Rumor, Adventure, <span class="cir">Devastation</span>, and <span
 					class="mom">Focus</span> tokens and place them in piles
 				within reach of all players. These tokens are always
 available. If the general token pool has no remaining tokens of any one type,
@@ -235,10 +238,15 @@ or Final Mystery they correspond to.</p>
 			<li>Shuffle the Spell cards, Condition cards, and <span class="mom"><a href="#unique-assets">Unique Asset</a> cards</span> into
 				separate decks. Place these decks faceup, with the top
 				card’s name and artwork visible.</li>
-			<li class=sr">The Mystic Ruins Encounter deck is only set up when
+			<li class="sr">The Mystic Ruins Encounter deck is only set up when
 				specifically mentioned by another component such as the Ancient
 				One or Prelude, otherwise return those cards to the game
 			box.</li>
+			<li class="td">The <a href="#dream-quest">Dream-Quest Encounter</a> deck is only set up when using the Dreamlands side board.</li>
+			<li class="cir">Shuffle the Disasters and Devastation Encounters to create
+their two respective decks. Place the Disaster deck facedown
+with the Mythos deck and the Devastation Encounter
+deck facedown with the other encounter decks.</li>
 			<li>Set the Mythos cards aside for step 8. Then separate all
 				other cards into decks by card back and shuffle each deck.</li>
 		</ul>
@@ -645,6 +653,20 @@ corresponds to his space.</li>
 Desert, Tel el-Amarna, or The Nile River may encounter that
 space by drawing an Africa Encounter and resolving the effect
 that corresponds to his space.</li>
+<li class="td">During the Encounter Phase, an investigator on Celephaïs,
+Dylath-Leen, or Ulthar may encounter that space by
+drawing a Dreamlands Encounter and resolving the effect
+that corresponds to his space.</li>
+<li class="cir">An investigator on a <a href="#devastation-encounters">devastated
+			space</a> cannot resolve a General
+				Encounter or a location encounter
+				that corresponds to his space.
+				Instead, during the Encounter
+				Phase, an investigator on a
+				devastated space may encounter
+				that space by drawing and
+				resolving the top card of the
+				Devastation Encounter deck.</li>
 		</ul>
 
 		<h3 id="token-encounters">Token Encounters</h3>
@@ -701,6 +723,22 @@ Ruins Encounter deck changes for
 any reason, move the Mystic Ruins
 token to the appropriate space.</li>
 							<li>Each Mystic Ruins Encounter’s back indicates the space
+								it corresponds to.</li>
+						</ul>
+					</li>
+					<li class="td" id="dream-quest">
+						During the Encounter Phase, an investigator on the space
+						containing the Dream-Quest token may encounter it by
+						drawing and resolving the top card of the Dream-Quest
+						Encounter deck.
+						<ul>
+							<li>The Dream-Quest token is placed on the space
+								corresponding to the top card of the Dream-Quest
+								Encounter deck. This space is referred to as the “active
+								Dream-Quest space.” If the top card of the Dream-Quest
+								Encounter deck changes for any reason, move the
+								Dream-Quest token to the appropriate space.</li>
+							<li>Each Dream-Quest Encounter’s back indicates the space
 								it corresponds to.</li>
 						</ul>
 					</li>
@@ -815,6 +853,37 @@ containing the Omen token.</p>
 				Encounter</a> cards to close (discard) Gates.</p>
 		</section>
 
+		<h3 id="revealing-gates">Revealing Gates</h3>
+
+		<p class="td">Some effects cause Gates in the Gate stack
+to be revealed. Revealed Gates remain where they are in the
+Gate stack unless the effect that causes the Gates to be
+revealed states otherwise.</p>
+<p>If an effect would cause a number of Gates to be revealed
+that exceeds the number of Gates in the Gate stack, the active
+investigator randomizes the Gates in the discard pile and places
+them at the bottom of the Gate stack before resolving that effect.</p>
+<p>After a Gate in the Gate stack has been revealed, it remains
+revealed until it is removed from the Gate stack or the Gate
+stack is randomized.</p>
+
+		<h3 id="dream-portals">Dream Portals</h3>
+
+		<p class="td">Dream Portals represent locations where the Dreamlands bleed
+into the waking world. Each space containing a Dream Portal is
+connected by a <a href="#local-paths">Local path</a> to the space that corresponds to that
+token.</p>
+<p>Some effects cause Dream Portals to spawn. To spawn a Dream
+Portal, reveal Gates from the top of the Gate stack until a
+Gate is revealed that corresponds to a space that is not on the
+Dreamlands side board and does not contain a Dream Portal.
+Place the Dream Portal on that space. A revealed Gate remains
+revealed in the Gate stack; do not randomize the Gate stack
+after spawning a Dream Portal.</p>
+<p>If a Gate would spawn on a space containing a Dream Portal,
+spawn that Gate on the space that corresponds to that Dream
+Portal instead.</p>
+
 		<h3 id="spawning-monsters">Spawning Monsters</h3>
 		<p>When an effect spawns a Monster, draw one random Monster
 		token from the <a href="#what-is-the-monster-cup">Monster cup</a> and place it on the space indicated
@@ -880,6 +949,7 @@ may list a “When this Monster is spawned,” or @ effect.</li>
 				most frequently appears on some <a href="#rumors"><span class="trait">Rumor</span></a> Mythos cards.</li>
 			<li>The investigators are required to draw a Mythos card but
 				cannot because the <strong>Mythos deck is empty</strong>.</li>
+			<li class="cir">When all nine named City spaces on the main board are <a href="#devastation-encounters">devastated</a>.</li>
 		</ul>
 
 		<h2 id="tests">Tests</h2>
@@ -1041,7 +1111,7 @@ The bonus to ] that Rex would gain from the Personal
 Assistant Asset does not affect the skill’s value.</p>
 
 		<h3 id="complex-encounters">Complex Encounters</h3>
-		<p>Expedition Encounters, Other World Encounters, <span class="sr">Mystic Ruins Encounters</span> and Special
+		<p>Expedition Encounters, Other World Encounters, <span class="sr">Mystic Ruins Encounters</span>, <span class="td">Dream-Quest Encounters</span>, <a class="cir" href="#devastation-encounters">Devastation Encounters</a>, and Special
 		Encounters are rewarding but dangerous experiences called
 		complex encounters. Each of these cards has three effects. To
 		resolve these encounters, an investigator first resolves the <span class="def">initial
@@ -1071,6 +1141,24 @@ Assistant Asset does not affect the skill’s value.</p>
 					discards the Other World Encounter card.</li>
 			</ol>
 		</section>
+
+		<h3 id="devastation-encounters">Devastation Encounters</h3>
+		<p class="cir">Some effects, notably those of Disasters, can
+		cause named City spaces to be devastated.</p>
+		<p>When a space is devastated, discard all
+		Clues and defeated investigator tokens
+		on that space, search the Expedition
+		Encounter deck for each card that
+		corresponds to that space and return
+		them to the game box, then place a
+		Devastation token on the space.</p>
+		<ul>
+			<li>If a Clue would be spawned on a
+				devastated space, discard that Clue instead.
+				A Clue cannot be moved to a devastated space.</li>
+			<li>A devastated space does not have a space type; it is no
+				longer a City space.</li>
+		</ul>
 
 		<h2 id="gaining-possessions-and-conditions">Gaining Possessions and Conditions</h2>
 		<p>Investigators frequently gain Assets, Artifacts, <a href="#spells">Spells</a>, and
@@ -1567,6 +1655,22 @@ any tokens placed by its effects.</p>
 			pile, the Lead Investigator chooses a space instead.</p>
 		</section>
 
+		<h2 id="disasters">Disasters</h2>
+		<p>Disasters represent natural or
+unnatural destructive forces that
+act on the cities of the world or
+other locations.</p>
+<p>Some effects cause the investigators
+to draw and resolve one or more
+Disasters. To do so, the Lead
+Investigator draws the top card of the
+Disaster deck, then he reads the card
+aloud to all investigators, resolving
+the card’s effects as instructed.</p>
+<p>The card’s effect is resolved
+immediately. After resolving the card’s effect in its entirety, the
+card is discarded to a faceup discard pile by the Disaster deck.</p>
+
 		<h2 id="mysteries">Mysteries</h2>
 		<p>In order to win the game, investigators need to solve a number of
 		Mysteries as indicated on the Ancient One sheet. Each Ancient One has its own deck of Mystery cards
@@ -1604,7 +1708,11 @@ game box, that Mystery no longer counts as a solved Mystery.</p>
 			</ul></li>
 			<li>If the active Mystery requires an Epic Monster to be defeated,
 				place two Health on the card. The Epic Monster’s toughness
-				is reduced by one for each Health on the active Mystery.</li>
+				is reduced by one for each Health on the active Mystery.<ul>
+					<li>However, if the active Mystery requires more than one
+Epic Monster to be defeated, place only one Health on the
+card. The toughness of each Epic Monster spawned by the
+Mystery is reduced by one for each Health on the card.</li></ul></li>
 			<li>If the active Mystery requires an investigator to spend one
 				or more Clues, place one Clue from the Clue pool on the
 				card. Any investigator may spend Clues placed on the active
@@ -1877,6 +1985,28 @@ losing two or more Health during a Combat Encounter?</p>
 Encounter, would cause the Spawn of Hastur Epic Monster
 to lose two or more Health, it loses one Health instead.</p>
 
+<p class="q td">What happens to Gates in the Gate stack after they are revealed?</p>
+<p class="a td">Revealed Gates remain where they are in the Gate stack
+unless the effect that causes the Gates to be revealed states
+otherwise. The Gate stack is not randomized nor are the Gates
+discarded or otherwise moved in the Gate stack.
+After a Gate in the Gate stack has been revealed, it remains
+revealed until it is removed from the Gate stack or the Gate
+stack is randomized.</p>
+
+<p class="q cir">If Doom starts on a space containing an Eldritch token placed
+by the “Apocalypse Nigh” Prelude, do you resolve a Disaster?</p>
+<p class="a cir">No. The Prelude states that a Disaster is resolved only when
+Doom advances to a space containing an Eldritch token. Doom
+must advance for the effect to trigger.</p>
+<p class="q cir">Are devastated cities still “named city spaces”?</p>
+<p class="a cir">Devastated spaces are no longer City spaces; they have no
+space type. However, a devastated space does retain its name.
+An effect that refers to a “named City space” means a space
+that is both a City space and a named space. As such, a
+devastated space is not a named City space because it is
+no longer a City space.</p>
+
 <h2 id="investigator-abilities">Investigator Abilities</h2>
 
 <h3 id="akachi-onyele">Akachi Onyele</h3>
@@ -1894,6 +2024,11 @@ to lose two or more Health, it loses one Health instead.</p>
 		<p>When Akachi moves using this ability, she moves directly onto the
 		chosen space and does not move onto or through any other spaces.</p></li>
 </ul>
+<h3 id="amanda-sharpe">Amanda Sharpe</h3>
+<p class="td">If Amanda’s action ability is used to discard multiple
+Talent Conditions, she may improve the same skill more than
+once. However, she cannot improve a skill to more than two
+above its printed value.</p>
 <h3 id="charlie-kane">Charlie Kane</h3>
 <ul>
 	<li><p>Charlie cannot use his action ability on an
@@ -1976,6 +2111,14 @@ on his space.</p>
 		Sanity recovered from a Rest action performed
 		during the current Action Phase.</li>
 </ul>
+<h3 id="kate-winthrop">Kate Winthrop</h3>
+<p class="td">If Kate is on a space containing a
+Dream Portal and a Gate would spawn on that space,
+Both the Dream Portal effect and Kate’s
+passive ability will attempt to replace the Gate spawn.
+The active investigator decides which effect takes priority.
+As such, he could have Kate’s passive ability cause the
+Gate to be discarded instead of spawning.</p>
 <h3 id="leo-anderson">Leo Anderson</h3>
 <ul>
 	<li>Leo can perform his action ability on any space, even
@@ -2003,6 +2146,24 @@ on his space.</p>
 		she has spent an appropriate number of Improvement tokens.</p></li>
 	<li>Lola can use her passive ability on herself. Like all additional dice
 		effects, this must be declared before the investigator rolls the test.</li>
+</ul>
+<h3 id="luke-robinson">Luke Robinson</h3>
+<ul class="td">
+	<li>
+		<p>Luke can resolve his passive ability to ignore Monsters
+		on his space when choosing an encounter. However, he must
+		choose to encounter a Gate.</p>
+		<p>The most common way to encounter a Gate is to draw and
+		resolve an Other World Encounter card. However, resolving
+		any encounter that requires Luke to occupy a space containing
+		a Gate is encountering a Gate. For example, the Caught in the
+		Web Mystery grants a different option for encountering a Gate.</p>
+	</li>
+	<li>Luke’s Investigator token is not placed during <a href="#choose-and-place-investigators">step 3 of
+			setup</a> as usual. After resolving setup, Luke chooses a space
+		that contains a Gate and places his Investigator token on that
+		space. If there are no Gates on the game board, he places his
+		Investigator token on a space of his choice instead.</li>
 </ul>
 <h3 id="mandy-thompson">Mandy Thompson</h3>
 <p class="utp">After resolving a Research Encounter, Mandy’s
