@@ -96,6 +96,10 @@ playing with expansions.</p>
 				deck. Place these decks near the side board.</li>
 		</ol>
 
+		<p>While side boards are in play, “game board” refers to both
+the main board included in Eldritch Horror and the side boards.
+“Side board” always refers to a side board and not the main board.</p>
+
 		<h3 id="organize-tokens">2. Organize Tokens</h3>
 		<p>Organize the following tokens as listed below:</p>
 		<ol>
@@ -129,7 +133,7 @@ effect. The space indicated on the front of the Clue token is not
 referenced.</li>
 			</ul></li>
 			<li>Create the general token pool by taking all Health, Sanity,
-				Improvement, Travel Ticket, Eldritch, Mystery, Rumor, and <span
+				Improvement, Impairment, Travel Ticket, Eldritch, Mystery, Rumor, Adventure, and <span
 					class="mom">Focus</span> tokens and place them in piles
 				within reach of all players. These tokens are always
 available. If the general token pool has no remaining tokens of any one type,
@@ -436,9 +440,11 @@ token or Ship Ticket token spent, respectively.
 
 			<h3 id="local-paths">Local Paths</h3>
 
-			<p class="mom">When playing with a side board, Local paths connect some spaces with dashed green lines.</p>
-
-			<p>During the Action Phase, an investigator can move along connected local paths (TODO).</p>
+			<p class="mom">When playing with a side board, Local paths connect some spaces with dashed green lines. Spaces connected by Local paths
+are so close to each other that moving between them does not
+require an action.</p>
+			<p>During the Action Phase, an investigator may move along any
+			number of interconnected Local paths.</p>
 			<ul>
 			<li>Each investigator may perform this movement only
 				once per round.</li>
@@ -584,10 +590,10 @@ one.</p>
 back of his Condition card instead of resolving an encounter. He
 does this <strong>even if</strong> there is a Monster on his space.</p>
 
-		<h3 id="combat-encounters-phase">Combat Encounters</h3>
+		<h3 id="combat-encounters">Combat Encounters</h3>
 
 		<p>If an investigator is on a space containing one or more Monsters,
-		he <strong>must</strong> resolve a single <a href="#combat-encounters">Combat Encounter</a> against each
+		he <strong>must</strong> resolve a single <a href="#combat-encounter">Combat Encounter</a> against each
 		Monster on that space.</p>
 		<p>After an investigator resolves all Combat Encounters, if there are
 		no Monsters in his space, <strong>he may resolve another encounter</strong>.</p>
@@ -631,6 +637,14 @@ effect that corresponds to his space.</li>
 Mountains, City of the Elder Things, or Plateau of Leng may
 encounter that space by drawing a Mountain Encounter and
 resolving the effect that corresponds to his space.</li>
+<li class="utp">During the Encounter Phase, an investigator on Alexandria,
+The Bent Pyramid, or Cairo may encounter that space by
+drawing an Egypt Encounter and resolving the effect that
+corresponds to his space.</li>
+<li class="utp">During the Encounter Phase, an investigator on The Sahara
+Desert, Tel el-Amarna, or The Nile River may encounter that
+space by drawing an Africa Encounter and resolving the effect
+that corresponds to his space.</li>
 		</ul>
 
 		<h3 id="token-encounters">Token Encounters</h3>
@@ -983,6 +997,49 @@ rolls, such as the @ effect of a Blessed Condition card.</p>
 		the “+2” side. An investigator cannot improve a single skill more than twice. An investigator’s skill is equal to the value printed
 		on his sheet plus the value of the matching Improvement token.</p>
 
+		<h3 id="impairment-tokens">Impairment Tokens</h3>
+		<p class="utp">Impairment tokens represent a permanent impairment
+		to an investigator’s skills.</p>
+		<ul>
+			<li>When an investigator impairs a skill, he gains an
+				Impairment token for that skill with the “–1” side up.</li>
+			<ul>
+				<li>If an investigator already has an Impairment token for
+					that skill, he flips that token to the “–2” side instead.
+					Each “–2” Impairment token counts as two “–1”
+					Impairment tokens.</li>
+			</ul></li>
+			<li>Improvement tokens and Impairment tokens negate one
+				another. If an investigator has both an Improvement token
+				and an Impairment token for the same skill, he discards
+				both tokens.</li>
+			<li>An investigator cannot impair a skill if doing so reduces that
+				skill’s modified value to below 1.
+				<ul>
+					<li>An investigator cannot choose to impair a skill if doing so
+						would reduce that skill’s modified value to below 1.</li>
+				</ul></li>
+				<li>An investigator cannot impair a single skill more than twice.
+					<ul>
+						<li>An investigator cannot choose to impair a skill if that skill
+							has already been impaired twice.</li>
+					</ul></li>
+		</ul>
+
+		<h3 id="skill-values">Skill Values</h3>
+		<p class="utp">Some effects reference
+an investigator’s skills as a value. A skill’s value is equal to
+its printed value as modified by Improvement tokens and
+Impairment tokens.</p>
+		<ul><li>A skill’s value is not affected by bonuses from possessions
+or other effects, since those effects are applied only when
+resolving a test.</li></ul>
+		<p class="example">For example, Rex Murphy has a printed ] of 3 and a single
+“+1 ]” Improvement token. As such, his ] value is 4
+(3 from its printed value plus 1 from his Improvement token).
+The bonus to ] that Rex would gain from the Personal
+Assistant Asset does not affect the skill’s value.</p>
+
 		<h3 id="complex-encounters">Complex Encounters</h3>
 		<p>Expedition Encounters, Other World Encounters, <span class="sr">Mystic Ruins Encounters</span> and Special
 		Encounters are rewarding but dangerous experiences called
@@ -1326,7 +1383,7 @@ there are none available, he is <a href="#eliminated-players">eliminated</a>.</p
 		and token to the game box. At the end of the Mythos Phase, he
 		<a href="#choosing-a-new-investigator">chooses a new investigator</a>.</p>
 
-		<h2 id="combat-encounters">Combat Encounters</h2>
+		<h2 id="combat-encounter">Combat Encounter</h2>
 
 		<p>Resolving Combat Encounters is the main way in which
 		investigators can defeat <a href="#spawning-monsters">Monsters</a> to remove them from the
@@ -1440,7 +1497,7 @@ place of the skill it replaced.</li>
 		are not on the game board. When an effect says “A Monster
 		ambushes you,” the investigator draws one random Monster
 		from the Monster cup and immediately encounters it in
-		<a href="#combat-encounters">combat</a>.</p>
+		<a href="#combat-encounter">combat</a>.</p>
 
 		<ul>
 			<li>The Monster is not spawned. If it has a “when spawned” effect, do
@@ -1705,8 +1762,8 @@ the investigator gains the Asset from the Asset deck, not the
 Unique Asset deck. An investigator gains a Unique Asset only
 if the effect specifically calls for a Unique Asset.</p>
 <p class="q mom">Can investigators trade Task Assets?</p>
-<p class="a">Yes. Task Assets, like other Assets, may be traded using the
-Trade action. If a Task Asset has one or more tokens on it,
+<p class="a">Yes. <span class="trait">Task</span> Assets, like other Assets, may be traded using the
+Trade action. If a <span class="trait">Task</span> Asset has one or more tokens on it,
 those tokens remain on the card when traded.</p>
 <p class="q mom">What happens if an investigator gains a Courier Run Unique
 Asset and there are no Clues in the Clue pool that correspond to
@@ -1782,6 +1839,37 @@ The Crystal does not create a prevention effect that “prevents”
 the loss of Health or Sanity if it would occur. Instead, it
 prohibits Mythos card text effects from causing the
 investigator to lose Health or Sanity.</p>
+<p class="q utp">If an investigator defeats a Cultist Monster as part of a Spawn
+of Abhoth Special Encounter during the Encounter Phase, can he
+resolve another encounter?</p>
+<p class="a utp">Yes. Spawn of Abhoth Special Encounters are considered
+Combat Encounters. If an investigator defeats every Monster
+on his space during the Encounter Phase, he may resolve an
+additional encounter of his choice.</p>
+
+<p class="q utp">If an investigator with a Record of Knowledge Unique Asset
+gains more than one Clue during a Research Encounter, can he
+place multiple Eldritch tokens on his task?</p>
+<p class="a utp">Yes. An investigator places one Eldritch token on a Record
+of Knowledge Unique Asset for each Clue he gains as part of a
+Research Encounter.
+However, Clues gained from other effects, such as Mandy
+Thompson’s passive ability, are not gained as part of the
+Research Encounter and do not allow the investigator to place
+an Eldritch token on the Record of Knowledge Unique Asset.</p>
+<p class="q utp">What happens if an investigator gains a Treasure Map Unique
+Asset and there are no Clues in the Clue pool?</p>
+<p class="a utp">The investigator should discard the Clue on the nearest
+space containing a Clue, placing that Clue faceup on his
+Treasure Map Unique Asset.</p>
+<p class="q utp">Does an investigator recover additional Sanity from effects,
+such as the Psychoanalyst Asset, if he has a Despair Condition?</p>
+<p class="a utp">No. An investigator with a Despair Condition does not
+recover Sanity from a Rest action nor does he recover additional
+Sanity from other effects during a Rest action.
+However, effects that cause an investigator to recover Sanity
+without performing a Rest action, such as the Private Care
+Asset, affect that investigator as normal.
 
 <h2 id="investigator-abilities">Investigator Abilities</h2>
 
@@ -1838,6 +1926,25 @@ Train path, and the chosen investigator may choose to move
 to that space as well. Finn and the chosen investigator cannot
 move to separate spaces.</li>
 </ul>
+<h3 id="hank-samson">Hank Samson</h3>
+
+<ul class="a utp">
+	<li>When Hank Samson encounters a Monster, if that Monster
+has both a { test and a } test, he resolves the } test first.
+Then he resolves the { test only if he lost one or more Health
+from the } test.</li>
+<li>If the Monster has a [ or other test in place of the } test,
+Hank resolves that test first, and then he resolves the { test
+only if he lost one or more Health.</li>
+<li>If the Monster has an | or other test in place of the { test,
+Hank’s passive ability has no effect on the encounter.
+</li></ul>
+<h3 id="harvey-walters">Harvey Walters</h3>
+<p class="utp">
+	As an action, Harvey Walters chooses another investigator
+on his space. That investigator improves one skill of his choice
+if Harvey’s <a href="#skill-values">value for that skill</a> is equal to or higher than his
+own.</p>
 <h3 id="jacqueline-fine">Jacqueline Fine</h3>
 <ul>
 	<li>Jacqueline may use her action ability to give any
@@ -1886,6 +1993,12 @@ move to separate spaces.</li>
 	<li>Lola can use her passive ability on herself. Like all additional dice
 		effects, this must be declared before the investigator rolls the test.</li>
 </ul>
+<h3 id="mandy-thompson">Mandy Thompson</h3>
+<p class="utp">After resolving a Research Encounter, Mandy’s
+passive ability could allow her to gain an additional Clue.
+This Clue is gained from her passive ability, not from
+the Research Encounter.</p>
+
 <h3 id="mark-harrigan">Mark Harrigan</h3>
 <ul>
 	<li>If Mark’s action ability causes a Monster to lose its
@@ -1900,6 +2013,12 @@ move to separate spaces.</li>
 		Condition unless,” Mark is not affected by that effect, even if he
 		chooses not to resolve the effect following “unless.”</p></li>
 </ul>
+<h3 id="minh-thi-phan">Minh Thi Phan</h3>
+<p class="utp">Minh’s action ability is not a <a
+	href="#prepare-for-travel-action">Prepare for Travel</a> action. It allows her to
+gain a travel ticket of
+her choice, even if her space is not connected to another space by the
+appropriate path and even if she is not on a City space.</p>
 <h3 id="norman-withers">Norman Withers</h3>
 <ul>
 	<li>Norman may use his passive ability anytime he
@@ -1907,6 +2026,10 @@ move to separate spaces.</li>
 		ability to reroll a die during a test or to pay for his
 		action ability.</li>
 </ul>
+<h3 id="rex-murphy">Rex Murphy</h3>
+<p class="utp">If at any time, Rex Murphy does not have a Cursed
+Condition, he immediately gains one Clue and improves one
+skill of his choice and then gains a Cursed Condition.</p>
 <h3 id="silas-marsh">Silas Marsh</h3>
 <ul>
 	<li>Silas cannot spend travel tickets to move additional
