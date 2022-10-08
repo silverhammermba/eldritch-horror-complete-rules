@@ -88,11 +88,6 @@ p.a:before {
 	}
 }
 
-/* script buttons start hidden */
-#buttons {
-	display: none;
-}
-
 /* span styles */
 .def {
 	font-variant: small-caps;
@@ -105,3 +100,30 @@ p.a:before {
 	font-style: italic;
 }
 
+.reckoning::before {
+	content:url('reckoning.svg');
+}
+
+.investigators::before {
+	content:url('investigators.svg');
+}
+
+.lore::before {
+	content:url('lore.svg');
+}
+
+.influence::before {
+	content:url('influence.svg');
+}
+
+.observation::before {
+	content:url('observation.svg');
+}
+
+.strength::before {
+	content:url('strength.svg');
+}
+
+.will::before {
+	content:url('will.svg');
+}
