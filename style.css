@@ -127,3 +127,9 @@ p.a:before {
 .will::before {
 	content:url('will.svg');
 }
+
+@media (prefers-color-scheme: dark) {
+  .reckoning, .investigators, .lore, .influence, .observation, .strength, .will {
+    filter: invert(100%);
+  }
+}
