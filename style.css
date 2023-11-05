@@ -95,31 +95,3 @@ p.a:before {
 	font-weight: bold;
 	font-style: italic;
 }
-
-.reckoning::before {
-	content:url('reckoning.svg');
-}
-
-.investigators::before {
-	content:url('investigators.svg');
-}
-
-.lore::before {
-	content:url('lore.svg');
-}
-
-.influence::before {
-	content:url('influence.svg');
-}
-
-.observation::before {
-	content:url('observation.svg');
-}
-
-.strength::before {
-	content:url('strength.svg');
-}
-
-.will::before {
-	content:url('will.svg');
-}
